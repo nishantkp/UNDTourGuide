@@ -51,6 +51,7 @@
                     android:orientation="horizontal">
 
                     <RatingBar
+                        android:id="@+id/ratting_bar"
                         style="?android:attr/ratingBarStyleSmall"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -58,6 +59,7 @@
                         android:rating="4.5" />
 
                     <TextView
+                        android:id="@+id/rating_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
