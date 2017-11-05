@@ -84,6 +84,17 @@ public class MusicAndNightLifeFragment extends Fragment {
                 bundle.putString(Keys.ATTRACTION_LOCATION_KEY, attraction.getLocationId());
                 bundle.putString(Keys.ATTRACTION_DETAIL_KEY, attraction.getAttractionDescription());
                 bundle.putDouble(Keys.ATTRACTION_RATING_KEY, attraction.getAttractionRating());
+                bundle.putInt(Keys.FRAGMENT_IDENTIFIER, 2);
+
+                /**
+                 * When identifier is,
+                 * 1    ->  ArchitectureFragment
+                 * 2    ->  MusicAndNightlifeFragment
+                 * 3    ->  RestaurantFragment
+                 * 4    ->  ShoppingFragment
+                 * That means intent send from specific fragment and it helps in providing behaviour
+                 * for up action button in {@link AttractionDetailActivity}
+                 */
                 intent.putExtras(bundle);
 
                 // start new activity
