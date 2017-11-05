@@ -16,6 +16,7 @@ public class Keys {
     public static final String ATTRACTION_LOCATION_KEY = "attraction_location";
     public static final String ATTRACTION_IMAGE_KEY = "attraction_image";
     public static final String ATTRACTION_RATING_KEY = "attraction_rating";
+    public static final String FRAGMENT_IDENTIFIER = "fragment_identifier";
 
     private Keys() {
         // Empty constructor
