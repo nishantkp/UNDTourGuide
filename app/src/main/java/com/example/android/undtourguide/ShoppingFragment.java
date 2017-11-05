@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -54,10 +53,11 @@ public class ShoppingFragment extends Fragment {
         ListView listView = rootView.findViewById(R.id.attraction_list);
 
         // Find the View with ID list_view_header, change the text and attach to ListView
+        /*
         View header = View.inflate(getContext(), R.layout.list_view_header, null);
         TextView headerText = header.findViewById(R.id.list_header);
         headerText.setText("Shopping");
-        listView.addHeaderView(header);
+        listView.addHeaderView(header);*/
 
         listView.setAdapter(adapter);
 
