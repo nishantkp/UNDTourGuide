@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAFAFA"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fdd835"
+            android:fontFamily="sans-serif-black"
+            android:padding="16dp"
+            android:text="T.O."
+            android:textColor="@android:color/white"
+            android:textSize="36sp" />
+
+        <ImageView
+            android:id="@+id/overview_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/overview_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="#263238"
+            android:textSize="16sp"
+            tools:text="@string/art_gallary_of_ontario" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp">
+
+            <ImageView
+                android:id="@+id/overview_image2"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="2"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/overview_image3"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="3"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/overview_image4"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+</ScrollView>

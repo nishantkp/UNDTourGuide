@@ -1,0 +1,52 @@
+package com.example.android.undtourguide;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.TextView;
+
+import java.util.ArrayList;
+
+/**
+ * Adapter to display list item for each category i.e Architecture, Shopping
+ * Music and Nightlife, Restaurant etc.
+ * Created by Nishant on 11/4/2017.
+ */
+
+public class AttractionAdapter extends ArrayAdapter<Attraction> {
+
+    public AttractionAdapter(Context context, ArrayList<Attraction> attraction) {
+        super(context, 0, attraction);
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+
+        // Check if the existing view is being reused, otherwise inflate the view
+        View listItemView = convertView;
+
+        if (listItemView == null) {
+            listItemView = LayoutInflater.from(getContext()).inflate(
+                    R.layout.list_item, parent, false);
+        }
+
+        // Get the Attraction object located at this position in the list
+        Attraction currentAttraction = getItem(position);
+
+        // Find the TextView in list_item.xml by Id for displaying attraction name
+        TextView attractionName = (TextView) listItemView.findViewById(R.id.attraction_name);
+        // Get the name from attractionName object
+        // Set the attraction name on TextView
+        attractionName.setText(currentAttraction.getAttractionName());
+
+        // Find the TextView in list_item.cml by id for displaying attraction address
+        TextView attractionAddress = (TextView) listItemView.findViewById(R.id.attraction_address);
+        // Get the address from attractionName object
+        // Set the attraction address on TextView
+        attractionAddress.setText(currentAttraction.getAttractionAddress());
+
+        return listItemView;
+    }
+}

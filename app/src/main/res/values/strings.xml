@@ -1,0 +1,287 @@
+<resources>
+    <string name="app_name">Tour Guide</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="overview_category">Toronto</string>
+    <string name="know_toronto">Know Toronto</string>
+    <string name="architecture_category">Architecture</string>
+    <string name="restaurant_category">Restaurants</string>
+    <string name="shopping_category">Shopping</string>
+    <string name="music_and_nightlife_category">Nightlife</string>
+
+    <string name="toronto_eton_center">Start your day off at one of the city’s most iconic
+        shopping hubs – Toronto Eaton Centre. Conveniently located downtown on Yonge Street between
+        Queen and Dundas, this stylish mall is a Toronto landmark. Snap a photo in front of the
+        famous Canada Geese sculpture flying overhead before strolling beneath the spectacular glass
+        galleria and exploring the more than 230 retailers, restaurants and services.
+    \n\nAllocate at least an hour and a half to spend here. Start off at Hudson’s Bay on Queen Street
+        (the company’s flagship location) where you can find high-end designer items in The Room,
+        a Saks Fifth Avenue (!) as well as mid-priced merchandise throughout the store. Then explore
+        some of the mall’s many other highlights, including J. Crew, a flagship HnM and the
+        Apple Store. Once you’ve worked up an appetite, head to the sprawling food court where
+        numerous culinary options await.</string>
+
+    <string name="yorkville_village">Make your way to Toronto’s most upscale shopping district –
+        Bloor-Yorkville, also known as the “Mink Mile.” With price tags ranging into the thousands
+        of dollars, this is not shopping for the faint of heart (or the budget-constrained).
+    \n\nIn Yorkville Village, Bloor-Yorkville’s high-end shopping centre, sought-after fashion brands
+        are ripe for the picking at specialty boutiques like Marina Rinaldi, NANNI and Via Cavour. 
+        You can also venture outside of the mall and explore the many designer stores lining Bloor 
+        Street – Tiffany n Co., Prada, Chanel and Louis Vuitton, to name a few. Window shopping is 
+        encouraged!</string>
+
+    <string name="yorkdale_shopping_center">Take a short drive (or subway ride) northwest to
+        Yorkdale Shopping Centre. This mall packs an impressive range of merchandise – everything
+        from books to toys to fashion to kitchenware – into its 250-plus stores. In addition to an
+        array of fashion and accessory stores, Yorkdale has recently opened its doors to unique
+        retailers like The LEGO Store and Zara Home.
+    \n\nExplore at your leisure before grabbing a snack at one of the mall’s sit-down restaurants
+        (Moxie’s or Milestone’s are always popular choices).
+        Then pack your bags back into the car to continue your shopping extravaganza.</string>
+
+    <string name="vaughn_mills">A bit north of Toronto in the city of Vaughan (easily accessible via
+        Highway 400) lies Vaughan Mills shopping centre. Anchored by fifteen retailers including Saks
+        OFF 5th, The Children’s Place and Victoria’s Secret, this outlet retail complex is a
+        shopper’s dream.
+    \n\nOutdoorsy types should be sure to head to the massive Bass Pro Shops Outdoor World, replete
+        with hunting, fishing and camping gear. And if you’re toting tots, treat them with a trip to
+        the 40,000 square foot LEGOLAND Discovery Centre, complete with rides, 4D cinema, Master
+        Model Builder workshops and impressive LEGO reconstructions of Toronto’s most iconic
+        attractions.</string>
+
+    <string name="square_one">Make your way southwest to Mississauga, where more retail delights
+        await. Square One is the largest mall in Ontario, boasting over 360 stores and services in
+        more than 1.6 million square feet of space. You’ll feel like Dorothy in the Emerald City as
+        you explore its many shops.
+    \n\nHigh-end fashion is the name of the game at boutiques like Ann Taylor, M for Mendocino and
+        Stars Mens. And with Ben Sherman and Simons opening in March 2016, the fashion game gets
+        kicked up an extra notch. And of course there are plenty of specialty stores for
+        accessories, footwear, electronics and more.</string>
+
+    <string name="sherway_garden">A short hop, skip and jump away from Square One lies Sherway
+        Gardens. Easy to spot due to its distinctive tented roof, Sherway Gardens has a geometric
+        layout that makes it feel like you’re strolling the streets of a well-maintained shopping
+        district.
+        \n\nCheck out Saks Fifth Avenue or Rinascimento women’s wear. For high-end men’s apparel,
+        head to Harry Rosen. If you prefer a one-stop shopping experience, it’s hard to beat the
+        selection of quality merchandise at Holt Renfrew. </string>
+
+    <string name="dixie_outlet_malls">Wind down your evening at Dixie Outlet Mall, where you can
+        find designer clothing for a fraction of the regular price. Canada’s largest enclosed
+        outlet mall boasts several brand name outlets – such as Guess, Mexx, Tommy Hilfiger, and
+        Levis – in addition to regular non-outlet stores like Ricki’s and Fairweather.
+    \nThe only thing better than getting that perfect pair of designer jeans is getting them 30%-70%
+        off regular retail price. You’ll be surprised at what treasures you can find with a bit of
+        bargain-hunting at Dixie Outlet Mall!</string>
+
+    <string name="toronto_premium_outlet">Can’t find exactly what you’re looking for at Dixie
+        Outlet Mall? Toronto Premium Outlets may have what you crave. Although a bit farther out
+        from the city core, the impressive collection of high-end brands for outlet prices is sure
+        to appeal to bargain-hunters of all stripes.
+        \n\nDesigner fashions and sportswear outlets include everything from Adidas to Hugo Boss
+        to Ted Baker London to Zumiez. Whichever time of year you go, you’re guaranteed to find
+        impressive savings at Toronto Premium Outlets.</string>
+
+    <string name="terroni">There’s always something delicious cooking at Terroni.
+        With its rustic décor, comfortable seating and laid-back atmosphere, this Southern 
+        Italian-inspired restaurant is a great place for a family meal. You’ll love the selection 
+        of fresh pastas and extensive wine list, while your kids will love the 28 pizza options and
+        dessert menu.</string>
+
+    <string name="barbqe_smokehouse">Barque Smokehouse offers delicious, feel-good barbecue fare 
+        that will have everyone licking their fingers (and plates!). Its Kid’s Menu includes a 
+        drink, meat selection, side dish and cookie or gelato for $10.00. Also, every Sunday is 
+        family night, which means huge and affordable platters for sharing…</string>
+
+    <string name="il_fornello">Danforth Avenue is known mainly for its numerous Greek restaurants,
+        but Il Fornello serves up Italian fare that rivals the best of them. From calamari, to
+        chicken parmigiana, to seafood linguini, there’s plenty here to appeal to mature palates.
+        Smaller mouths will love the spaghetti n meatballs and pepperoni pizza.</string>
+
+    <string name="uncle_bettys">Family owned and operated, Uncle Betty’s Diner specializes in 
+        gourmet comfort food that is enticing to kids and kids-at-heart alike. Options for all 
+        ages include hotdogs and sloppy joes, while their dedicated 13-and-under menu features 
+        other kid-approved favourites like mac ‘n cheese and chicken fingers. The ice cream bar 
+        provides a sweet ending to a tasty meal.</string>
+
+    <string name="the_ace">The children’s menu at The Ace includes more than your standard fare.
+        Yes, there’s grilled cheese and spaghetti, but there’s also more sophisticated dishes
+        like broccoli with aged cheddar sauce. Grown-ups have options ranging from arugula salad
+        to Ace’s famous country-fried chicken, any of which can be paired with a cocktail or glass
+        of wine from the extensive drink menu.</string>
+
+    <string name="magic_oven">Known for its healthy pizzas made with fresh, local and organic 
+        ingredients and Magic Oven has multiple locations around the city. You’ll find plenty of 
+        families at the Danforth location on Mondays between 5 p.m. and 9 p.m., when kids eat free.
+        The kids’ menu comes with a quiz and puzzles to keep tots occupied while they wait for their
+        food to arrive. Nutritious and delicious!</string>
+
+    <string name="mandarin">With several locations in the Greater Toronto Area, Mandarin has long 
+        been a favourite destination for families. Its all-you-can-eat Chinese-Canadian buffet 
+        provides options for all tastes. If your kids aren’t crazy about wonton soup and maki rolls,
+        they can always head for the oven-baked pizzas and barbecued chicken instead.</string>
+
+    <string name="the_old_spaghetti_factory">Just steps away from St. Lawrence Market, located in a 
+        historical blacksmith shop and decked out in turn-of-the-century décor, The Old Spaghetti 
+        Factory is a kid magnet. A bustling place where it’s okay to be noisy, you can grab a cozy
+        booth bathed in the vintage warm glow of the restaurant’s many stained-glass lamps. 
+        For added fun, try one of more unique tables, in a streetcar, on a 100-year old carousel 
+        or even on a king-sized bed!</string>
+
+    <string name="pan_on_danforth">Opa! A star on the Danforth’s constellation of Greek restaurants,
+        Pan on the Danforth has been providing loyal customers with delicious Hellenic fare,
+        entertainment (including live music and belly dancers), and dazzling table-side service
+        for 10 years. Truly a Toronto institution, Pan will have everyone in your party mesmerized
+        and totally sated.</string>
+
+    <string name="lisbon_by_night">A popular spot for family get-togethers and celebrations, this authentic
+        Portuguese gem cooks up a delicious “rodizio” fish exactly like how they used to in the old
+        country. Kids who haven’t developed a taste for seafood yet can fill up on chicken fingers
+        or penne with tomato sauce. Live music on the weekends provides entertainment for the whole
+        family.</string>
+
+    <string name="lost_and_found">oused in the lower level of a hundred year-old building in the
+        heart of King West, Lost and Found presents a unique space for discovery. The old brick
+        walls contrasted with the swanky leather couches give this nightspot an air of classic
+        meets modern. It’s a popular hangout on Monday nights when most other clubs are closed.
+        Come to lose yourself in the music – and find new friendships, relationships, and
+        experiences.</string>
+
+    <string name="uniun">Partying at Uniun is more than just a night out; it’s an experience.
+        Conceived by nightlife visionary Charles Khabouth as “the first of its kind,” Uniun boasts
+        LED-light installations, a state-of-the-art sound system, and a unique industrial décor.
+        Lush VIP banquet seating is contrasted by cement walls, factory beams, and bronzed metal
+        arches awash in the glow of bright coloured lights. Uniun is a mishmash of old and new that
+        all comes together to create a multisensory experience like no other.</string>
+
+    <string name="coda">If you want another spot out of the club district where you can still enjoy
+        a butt-kicking sound system, CODA in the Annex neighbourhood is worth your time. A mix of
+        dressed up clubbers and band T-shirt wearing partiers populates the dance floor and the
+        surrounding seating area. You can even get a bite to eat there if you’ve burned up all your
+        calories on the floor.</string>
+
+    <string name="cube">With its retro ‘70s design, high ceilings, and extensive selection of
+        bottles and beverages, Cube styles itself as “the next dimension of entertainment and style.
+        ” A large dancefloor, private booths, and comfortable beige-leather lounge offer multiple
+        options for an evening of fun. Upstairs, the rooftop patio provides stunning views of the
+        Toronto skyline and is always a hot spot during the Toronto International Film Festival for
+        celeb-filled parties.</string>
+
+    <string name="nest">Found on College Street, away from the club district, every weekend Nest
+        can be counted on to be blasting the best club bangers. From well-known international DJs to
+        local up-and-coming talent, and a massive DYNACORD sound system, enjoy big sound and cold
+        drinks where the dancefloor is always happening.</string>
+
+    <string name="maison_mercer">A hot crowd of party-goers, stylish interior and ultramodern sound
+        system – what more can you ask for from a nightclub? Centrally located in the heart of the
+        Entertainment District, this 12,000 square foot multi-level venue boasts a rooftop patio,
+        elevated seating areas, performance stage, dance floor, catering kitchen, LED lighting and
+        video screens and advanced sound system. Whether for a private event, live performance or
+        weekend dance party, Maison is a place to see and be seen.</string>
+
+    <string name="efs_toronto">Catering to young professionals and businesspeople in the King West
+        area, EFS has a rooftop patio that is the envy of many of Toronto’s other nightclubs.
+        Inspired by a piece of art, EFS stands for “Everything’s for Sale.” Private cabanas
+        (equipped with hookahs) line the patio, making it an ideal spot to chill out with friends.
+        Try one of EFS’s signature cocktails, developed by a real mixologist.</string>
+
+    <string name="the_rex">At The Rex you can catch live jazz seven days a
+        week. Here, local luminaries like Rich Brown and Don Thompson share the stage with
+        international acts such as Snarky Puppy. With its full lineup of fine musicians, casual
+        atmosphere and affordable drink menu, The Rex has been the go-to spot for jazz on Queen
+        West for over 40 years.</string>
+
+    <string name="reservoir_loundge">In the heart of downtown Toronto, The Reservoir Lounge
+        is one of the hippest lounges in the city. Exposed brick walls and dim lighting give
+        this basement venue a relaxed martini-swirling vibe, but don’t be fooled – once the
+        band takes the stage the dance floor abounds with energy. It was at The Reservoir Lounge
+        that a young unknown named Michael Bublé first made a name for himself.</string>
+
+    <string name="cn_tower">Toronto’s most famous landmark is more than just an engineering wonder
+        – it’s also an award-winning dining and entertainment destination. Standing at 553 metres
+        (1,815 feet) the CN Tower held the distinction of being the tallest free-standing structure
+        in the world until the completion of Burj Khalifa in 2010. Today it is one of Toronto’s
+        most popular attractions for tourists and locals alike and on June 26, 2016 it turned 40!</string>
+
+    <string name="new_city_hall">While the buildings base is rectangular,
+        its two towers are curved in cross-section and rise to differing heights.
+        The east tower is 27 storeys (99.5 metres (326 ft)) tall and the west tower is 20 storeys
+        (79.4 metres (260 ft)). Between the towers is the saucer-like council chamber, and the
+        overall arrangement is somewhat like two hands cradling the chamber</string>
+
+    <string name="old_city_hall">Toronto\'s Old City Hall was one of the largest buildings in Toronto
+        and the largest civic building in North America upon completion in 1899.
+        It was the burgeoning city\'s third city hall. It housed Toronto\'s municipal government
+        and courts for York County and Toronto, taking over from the Adelaide Street Court House.
+        York County offices were also located in Old City Hall from 1900 to 1953.
+        With the establishment of Metropolitan Toronto, the county seat moved to
+        Newmarket, Ontario (and to the Old Newmarket Town Hall and Courthouse).</string>
+
+    <string name="art_gallary_of_ontario">With a collection of more than 90,000 works of art,
+        the Art Gallery of Ontario (AGO) is among the largest and most distinguished art museums
+        in North America. An international landmark, the AGO is also one of Canada’s most innovative
+        cultural destinations. Highlights of the Gallery’s world-class collection include iconic
+        \n\nCanadian and Inuit works, along with European and contemporary art – all on view in a
+        spectacular building transformed by renowned Toronto-born architect Frank Gehry. After
+        spending time with the AGO’s vast collection, be sure to enjoy a meal or glass of wine
+        at the Gallery’s award-winning restaurant FRANK. Visit shopAGO for a unique collection
+        of artful gifts, one-of-a-kind jewelry, and beautiful art books.</string>
+
+    <string name="royal_ontario_museum">Opened in 1914, the Royal Ontario Museum (ROM)
+        showcases art, culture, and nature from around the globe and across the ages.
+        One of North America\'s most renowned cultural institutions, Canada\'s largest museum is
+        home to a world-class collection of more than six million objects and specimens, featured
+        in 40 gallery and exhibition spaces. As the country\’s preeminent field research institute
+        and an international leader in new and original findings in biodiversity, palaeontology,
+        earth sciences, the visual arts, material culture and archaeology, the ROM plays a vital
+        role in advancing our global understanding of the artistic, cultural and natural world.
+        \n\nThe Renaissance ROM expansion project (2007) merged the iconic architectural heritage of
+        the original building with the Studio Daniel Libeskind-designed Michael Lee-Chin Crystal.
+        A distinctive new symbol of Toronto for the 21st century, the Crystal marked the beginning
+        of a new era for the ROM as the country\'s premier cultural and social destination.</string>
+
+
+    <string name="commerce_court_north">The Commerce Court complex opened its doors in the early
+        1970’s, but with the inclusion of Commerce Court North into the four-acre complex,
+        its history reaches back to 1931. It’s hard to imagine today, but the 34-storey North
+        Tower was the tallest building in the British Empire until 1962 and home to Canada’s
+        business elite for a generation. It was designed by Pearson and Darling Architects of
+        Toronto, with the help of U.S. design firm York and Sawyer.
+        \n\nWith its stunning vaulted
+        gold-coffered ceiling and classic Art-Deco style, the North Tower was a showplace in its
+        time, and today remains a treasured heritage building in Toronto’s financial core and a
+        major component of Commerce Court.</string>
+
+    <string name="roy_thompson_hall">Roy Thomson Hall is a concert hall in Toronto, Ontario, Canada.
+        Located downtown in the city\'s entertainment district, it is home to the Toronto Symphony
+        Orchestra and Toronto Mendelssohn Choir. Opened in 1982, its circular architectural design
+        exhibits a sloping and curvilinear glass exterior. It was designed by Canadian architects
+        Arthur Erickson and Mathers and Haldenby. The hall seats 2,630 guests and features a pipe
+        organ built by Canadian organ builders Gabriel Kney of London, Ontario.</string>
+
+    <string name="union_station">Union Station is a major railway station and intermodal
+        transportation hub in Toronto, Ontario, Canada. It is located on Front Street West,
+        on the south side of the block bounded by Bay Street and York Street in downtown Toronto.
+        The station building is owned by the City of Toronto, while the train shed and trackage
+        is owned by the commuter rail operator GO Transit. Union Station has been designated a
+        National Historic Site of Canada since 1975, and a Heritage Railway Station since 1989.</string>
+
+    <string name="the_royal_york">The Fairmont Royal York, formerly the Royal York, is a large
+        historic hotel in downtown Toronto, Ontario, Canada, at 100 Front Street West.
+        Opened on June 11, 1929, the Royal York was designed by Ross and Macdonald
+        (with Sproatt and Rolph) and built by the Canadian Pacific Railway across the street from
+        Toronto Union Station. With 28 floors, the Château-style building was the tallest building
+        in Toronto at that time, and the tallest building in the British Empire until the
+        construction of Canadian Bank of Commerce tower on King Street the following year.</string>
+
+    <string name="overview_text">Toronto is Canada\'s largest city, the fourth largest in North America,
+        and home to a diverse population of about 2.8 million people. It\'s a global centre for
+        business, finance, arts and culture and is consistently ranked
+        one of the world\'s most livable cities. Toronto, the capital of the province of Ontario,
+        is a major Canadian city along Lake Ontario’s northwestern shore.
+        \n\nIt\'s a dynamic metropolis with a core of soaring skyscrapers, all dwarfed by the iconic,
+        free-standing CN Tower. Toronto also has many green spaces,
+        from the orderly oval of Queen’s Park to 400-acre High Park and its trails, sports facilities and zoo.</string>
+</resources>
