@@ -22,7 +22,7 @@ public class ArchitectureFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(final LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.attraction_list, container, false);
 
@@ -83,7 +83,8 @@ public class ArchitectureFragment extends Fragment {
                 bundle.putString(Keys.ATTRACTION_ADDRESS_KEY, attraction.getAttractionAddress());
                 bundle.putInt(Keys.ATTRACTION_IMAGE_KEY, attraction.getImageResourceId());
                 bundle.putString(Keys.ATTRACTION_LOCATION_KEY, attraction.getLocationId());
-                bundle.putInt(Keys.ATTRACTION_IMAGE_KEY, attraction.getImageResourceId());
+                bundle.putString(Keys.ATTRACTION_DETAIL_KEY, attraction.getAttractionDescription());
+                intent.putExtras(bundle);
 
                 // start new activity
                 startActivity(intent);

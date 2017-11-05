@@ -82,7 +82,8 @@ public class MusicAndNightLifeFragment extends Fragment {
                 bundle.putString(Keys.ATTRACTION_ADDRESS_KEY, attraction.getAttractionAddress());
                 bundle.putInt(Keys.ATTRACTION_IMAGE_KEY, attraction.getImageResourceId());
                 bundle.putString(Keys.ATTRACTION_LOCATION_KEY, attraction.getLocationId());
-                bundle.putInt(Keys.ATTRACTION_IMAGE_KEY, attraction.getImageResourceId());
+                bundle.putString(Keys.ATTRACTION_DETAIL_KEY, attraction.getAttractionDescription());
+                intent.putExtras(bundle);
 
                 // start new activity
                 startActivity(intent);
