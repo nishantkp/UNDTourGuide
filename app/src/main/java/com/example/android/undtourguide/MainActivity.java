@@ -16,11 +16,7 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        // When user first open the app, show summary
-        getSupportFragmentManager().beginTransaction()
-                .replace(R.id.content_body, new OverviewFragment())
-                .commit();
+        setTitle("T.O.");
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -33,6 +29,9 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        // Start the first Menu item in Navigation Drawer and highlight it
+        onNavigationItemSelected(navigationView.getMenu().getItem(0).setChecked(true));
     }
 
     @Override
