@@ -29,31 +29,31 @@ public class ArchitectureFragment extends Fragment {
         final ArrayList<Attraction> architecturePlaces = new ArrayList<Attraction>();
         architecturePlaces.add(new Attraction("CN Tower", "301 Front St W",
                 getResources().getString(R.string.cn_tower), R.drawable.cn_tower,
-                "43.642482,-79.387074"));
+                "43.642482,-79.387074",3.5));
         architecturePlaces.add(new Attraction("New City Hall", "100 Queen St W",
                 getResources().getString(R.string.new_city_hall), R.drawable.new_city_hall,
-                "43.653311,-79.383988"));
+                "43.653311,-79.383988",4.2));
         architecturePlaces.add(new Attraction("Old City Hall", "60 Queen St W",
                 getResources().getString(R.string.old_city_hall), R.drawable.old_city_hall,
-                "43.652453, -79.381980"));
+                "43.652453, -79.381980",4.5));
         architecturePlaces.add(new Attraction("Art Gallery of Ontario", "317 Dundas St W",
                 getResources().getString(R.string.art_gallary_of_ontario), R.drawable.art_galary_of_ontario,
-                "43.653759, -79.392656"));
+                "43.653759, -79.392656",4.1));
         architecturePlaces.add(new Attraction("Royal Ontario Museum", "100 Queens Park",
                 getResources().getString(R.string.royal_ontario_museum), R.drawable.royal_ontario_museum,
-                "43.667656, -79.394521"));
+                "43.667656, -79.394521",3.5));
         architecturePlaces.add(new Attraction("Commerce Court North", "199 Bay St, Ground Floor",
                 getResources().getString(R.string.commerce_court_north), R.drawable.commerce_court_north,
-                "43.648623, -79.379242"));
+                "43.648623, -79.379242",3.5));
         architecturePlaces.add(new Attraction("Roy Thompson Hall", "60 Simcoe St",
                 getResources().getString(R.string.royal_ontario_museum), R.drawable.roy_thompson_hall,
-                "43.646491, -79.386469"));
+                "43.646491, -79.386469",4.5));
         architecturePlaces.add(new Attraction("Union Station", "Toronto, ON M5J 1E6",
                 getResources().getString(R.string.union_station), R.drawable.union_station,
-                "43.645076, -79.380849"));
+                "43.645076, -79.380849",3.6));
         architecturePlaces.add(new Attraction("The Royal York", "100 Front St W",
                 getResources().getString(R.string.the_royal_york), R.drawable.the_royal_york,
-                "43.645803, -79.381302"));
+                "43.645803, -79.381302",3.9));
 
         AttractionAdapter adapter = new AttractionAdapter(getActivity(), architecturePlaces);
         ListView listView = rootView.findViewById(R.id.attraction_list);
