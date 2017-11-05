@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 public class AttractionDetailActivity extends AppCompatActivity {
@@ -42,6 +43,16 @@ public class AttractionDetailActivity extends AppCompatActivity {
         TextView attractionAddress = findViewById(R.id.list_item_attraction_address_to_google_maps);
         // Get the attraction address from Bundle and set the text
         attractionAddress.setText(bundle.getString(Keys.ATTRACTION_ADDRESS_KEY));
+
+        // Find the TextView for displaying rating with id of rating_text
+        TextView ratingText = findViewById(R.id.rating_text);
+        // Get the attraction ratting from Bundle and set the text
+        ratingText.setText(String.valueOf(bundle.getDouble(Keys.ATTRACTION_RATING_KEY)));
+
+        // Find the RatingBar with id of ratting_bar
+        RatingBar ratingBar = findViewById(R.id.ratting_bar);
+        // Convert the rating into float from double and set the RatingBar
+        ratingBar.setRating((float) bundle.getDouble(Keys.ATTRACTION_RATING_KEY));
 
         // Find the TextView with id of take_me_to_location and attach a listener to it
         // So when user clicks on TextView, it opens up maps through Intent to show location
