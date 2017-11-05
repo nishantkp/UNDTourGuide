@@ -76,5 +76,16 @@
                 android:textSize="16sp"
                 tools:text="Toronto, ON M5J 1E6" />
         </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/textview_background"
+            android:fontFamily="sans-serif-medium"
+            android:padding="8dp"
+            android:text="take me"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
     </LinearLayout>
 </ScrollView>
