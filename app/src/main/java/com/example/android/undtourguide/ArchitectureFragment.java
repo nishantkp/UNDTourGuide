@@ -24,7 +24,7 @@ public class ArchitectureFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.attraction_list,container,false);
+        View rootView = inflater.inflate(R.layout.attraction_list, container, false);
 
         final ArrayList<Attraction> architecturePlaces = new ArrayList<Attraction>();
         architecturePlaces.add(new Attraction("CN Tower", "301 Front St W",
@@ -73,6 +73,17 @@ public class ArchitectureFragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 // Create a new Intent to display detail about the list item clicked on
                 Intent intent = new Intent(getActivity(), AttractionDetailActivity.class);
+
+                // Get the Attraction item which is clicked on
+                Attraction attraction = architecturePlaces.get(position);
+
+                /** Create a new Bundle to send data to {@link AttractionDetailActivity} */
+                Bundle bundle = new Bundle();
+                bundle.putString(Keys.ATTRACTION_NAME_KEY, attraction.getAttractionName());
+                bundle.putString(Keys.ATTRACTION_ADDRESS_KEY, attraction.getAttractionAddress());
+                bundle.putInt(Keys.ATTRACTION_IMAGE_KEY, attraction.getImageResourceId());
+                bundle.putString(Keys.ATTRACTION_LOCATION_KEY, attraction.getLocationId());
+                bundle.putInt(Keys.ATTRACTION_IMAGE_KEY, attraction.getImageResourceId());
 
                 // start new activity
                 startActivity(intent);
