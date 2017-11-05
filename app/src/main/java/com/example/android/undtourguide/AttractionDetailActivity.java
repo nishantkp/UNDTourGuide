@@ -10,13 +10,15 @@ import android.widget.TextView;
 
 public class AttractionDetailActivity extends AppCompatActivity {
 
+    private Bundle bundle;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_attraction_detail);
 
         // Get the intent
-        final Bundle bundle = getIntent().getExtras();
+        bundle = getIntent().getExtras();
 
         // Find the ImageView for the image of attraction by id of list_item_attraction_image
         ImageView attractionImage = findViewById(R.id.list_item_attraction_image);
@@ -45,11 +47,29 @@ public class AttractionDetailActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(bundle.getString(Keys.ATTRACTION_LOCATION_KEY)));
+                intent.setData(Uri.parse(getMapsURIString(bundle.getString(Keys.ATTRACTION_LOCATION_KEY))));
                 if (intent.resolveActivity(getPackageManager()) != null) {
                     startActivity(intent);
                 }
             }
         });
+    }
+
+    /**
+     * This function is called to generate URI string for map
+     * When this URI is passed, it will show marker on the map with name of particular location
+     * clicked on
+     *
+     * @param   locationId Location string in format (Latitude, Longitude)
+     * @return  URI for maps in format
+     *         "geo : Latitude , Longitude ?q = <Latitude> <Longitude> (Label Name)"
+     */
+    private String getMapsURIString(String locationId){
+        String [] latitudeAndLongitude = locationId.split(",");
+        String latitude = latitudeAndLongitude[0];
+        String longitude = latitudeAndLongitude[1];
+        return "geo:" + latitude + "," + longitude
+                + "?q=<" + latitude + ">,<" + longitude + ">,("
+                + bundle.getString(Keys.ATTRACTION_NAME_KEY) + ")";
     }
 }
