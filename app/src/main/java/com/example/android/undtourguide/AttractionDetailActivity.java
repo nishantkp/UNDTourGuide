@@ -10,6 +10,9 @@ import android.widget.TextView;
 
 public class AttractionDetailActivity extends AppCompatActivity {
 
+    /**
+     * Bundle to receive through Intent from different fragments
+     */
     private Bundle bundle;
 
     @Override
@@ -57,15 +60,15 @@ public class AttractionDetailActivity extends AppCompatActivity {
 
     /**
      * This function is called to generate URI string for map
-     * When this URI is passed, it will show marker on the map with name of particular location
+     * When this URI is passed, it will show marker on the map with name of particular attraction
      * clicked on
      *
-     * @param   locationId Location string in format (Latitude, Longitude)
-     * @return  URI for maps in format
-     *         "geo : Latitude , Longitude ?q = <Latitude> <Longitude> (Label Name)"
+     * @param locationId Location string in format (Latitude, Longitude)
+     * @return URI for maps in format
+     * "geo : Latitude , Longitude ?q = <Latitude> <Longitude> (Label Name)"
      */
-    private String getMapsURIString(String locationId){
-        String [] latitudeAndLongitude = locationId.split(",");
+    private String getMapsURIString(String locationId) {
+        String[] latitudeAndLongitude = locationId.split(",");
         String latitude = latitudeAndLongitude[0];
         String longitude = latitudeAndLongitude[1];
         return "geo:" + latitude + "," + longitude
