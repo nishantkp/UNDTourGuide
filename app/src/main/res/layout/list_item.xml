@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
             android:gravity="center_vertical"
-            android:textColor="#121212"
+            android:textColor="@color/primaryTextColor"
             android:textSize="16sp"
             tools:text="Union Station" />
 
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
             android:gravity="center_vertical"
-            android:textColor="#757575"
+            android:textColor="@color/secondaryTextColor"
             android:textSize="16sp"
             tools:text="toronto, ontario" />
     </LinearLayout>
@@ -39,5 +39,5 @@
         android:layout_centerVertical="true"
         android:layout_marginRight="16dp"
         android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
-        android:tint="#757575" />
+        android:tint="@color/secondaryTextColor" />
 </RelativeLayout>

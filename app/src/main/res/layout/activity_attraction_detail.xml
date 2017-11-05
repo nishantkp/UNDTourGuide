@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
             android:padding="16dp"
-            android:textColor="#263238"
+            android:textColor="@color/primaryTextColor"
             android:textSize="24sp"
             android:textStyle="bold"
             tools:text="Union Station" />
@@ -64,7 +64,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
                         android:text="4.5"
-                        android:textColor="#757575" />
+                        android:textColor="@color/secondaryTextColor" />
                 </LinearLayout>
             </FrameLayout>
 
@@ -94,7 +94,7 @@
             android:fontFamily="sans-serif-light"
             android:paddingLeft="16dp"
             android:paddingRight="16dp"
-            android:textColor="#263238"
+            android:textColor="@color/primaryTextColor"
             android:textSize="16sp"
             tools:text="@string/union_station" />
 
@@ -105,7 +105,7 @@
             android:fontFamily="sans-serif-light"
             android:padding="16dp"
             android:text="Address"
-            android:textColor="#263238"
+            android:textColor="@color/primaryTextColor"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -121,7 +121,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
-                android:src="@drawable/ic_location_on_black_24dp" />
+                android:src="@drawable/ic_location_on_black_24dp"
+                android:tint="@color/primaryTextColor" />
 
             <TextView
                 android:id="@+id/list_item_attraction_address_to_google_maps"
@@ -130,7 +131,7 @@
                 android:fontFamily="sans-serif-light"
                 android:gravity="center_vertical"
                 android:paddingLeft="16dp"
-                android:textColor="#263238"
+                android:textColor="@color/primaryTextColor"
                 android:textSize="16sp"
                 tools:text="Toronto, ON M5J 1E6" />
         </LinearLayout>

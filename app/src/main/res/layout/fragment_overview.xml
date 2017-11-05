@@ -25,7 +25,7 @@
             android:fontFamily="sans-serif-light"
             android:paddingLeft="16dp"
             android:paddingRight="16dp"
-            android:textColor="#263238"
+            android:textColor="@color/primaryTextColor"
             android:textSize="16sp"
             tools:text="@string/art_gallary_of_ontario" />
 
