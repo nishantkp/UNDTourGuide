@@ -7,7 +7,6 @@
     android:background="#FAFAFA">
 
     <LinearLayout
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -29,6 +28,62 @@
             android:textSize="24sp"
             android:textStyle="bold"
             tools:text="Union Station" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RatingBar
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="4.5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="4.5"
+                        android:textColor="#757575" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/take_me_to_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/textview_background"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="8dp"
+                    android:text="take me"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+            </FrameLayout>
+        </LinearLayout>
 
         <TextView
             android:id="@+id/list_item_attraction_description"
@@ -57,7 +112,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:drawSelectorOnTop="true"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -76,17 +132,5 @@
                 android:textSize="16sp"
                 tools:text="Toronto, ON M5J 1E6" />
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/take_me_to_location"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:background="@drawable/textview_background"
-            android:fontFamily="sans-serif-medium"
-            android:padding="8dp"
-            android:text="take me"
-            android:textColor="@android:color/white"
-            android:textSize="14sp" />
     </LinearLayout>
 </ScrollView>
