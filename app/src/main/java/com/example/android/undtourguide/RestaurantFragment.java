@@ -74,7 +74,7 @@ public class RestaurantFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 // Create a new Intent to display detail about the list item clicked on
-                Intent intent = new Intent(getActivity(), AttractionDetail.class);
+                Intent intent = new Intent(getActivity(), AttractionDetailActivity.class);
 
                 // start new activity
                 startActivity(intent);
