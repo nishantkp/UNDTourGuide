@@ -86,6 +86,7 @@ public class RestaurantFragment extends Fragment {
                 bundle.putInt(Keys.ATTRACTION_IMAGE_KEY, attraction.getImageResourceId());
                 bundle.putString(Keys.ATTRACTION_LOCATION_KEY, attraction.getLocationId());
                 bundle.putString(Keys.ATTRACTION_DETAIL_KEY, attraction.getAttractionDescription());
+                bundle.putDouble(Keys.ATTRACTION_RATING_KEY, attraction.getAttractionRating());
                 intent.putExtras(bundle);
 
                 // start new activity
