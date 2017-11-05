@@ -89,9 +89,6 @@ public class RestaurantFragment extends Fragment {
 
                 // start new activity
                 startActivity(intent);
-
-                // start new activity
-                startActivity(intent);
             }
         });
         return rootView;
