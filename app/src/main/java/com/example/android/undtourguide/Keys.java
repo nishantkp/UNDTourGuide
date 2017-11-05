@@ -15,6 +15,7 @@ public class Keys {
     public static final String ATTRACTION_ADDRESS_KEY = "attraction_address";
     public static final String ATTRACTION_LOCATION_KEY = "attraction_location";
     public static final String ATTRACTION_IMAGE_KEY = "attraction_image";
+    public static final String ATTRACTION_RATING_KEY = "attraction_rating";
 
     private Keys() {
         // Empty constructor
