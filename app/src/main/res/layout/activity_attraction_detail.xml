@@ -78,6 +78,7 @@
         </LinearLayout>
 
         <TextView
+            android:id="@+id/take_me_to_location"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
