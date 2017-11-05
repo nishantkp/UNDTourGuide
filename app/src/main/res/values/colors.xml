@@ -8,4 +8,6 @@
     <color name="primaryTextColor">#212121</color>
     <color name="secondaryTextColor">#757575</color>
 
+    <!-- Background color scheme -->
+    <color name="primaryBackground">#FFFFFF</color>
 </resources>
