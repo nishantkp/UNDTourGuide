@@ -56,34 +56,39 @@ public class MainActivity extends AppCompatActivity
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.content_body, new OverviewFragment())
                         .commit();
+                getSupportActionBar().setTitle("T.O.");
                 break;
             case R.id.nav_architecture:
                 /** When user clicks on Architecture option start {@link ArchitectureFragment} */
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.content_body, new ArchitectureFragment())
                         .commit();
+                getSupportActionBar().setTitle("Architecture");
                 break;
             case R.id.nav_restaurant:
                 /** When user clicks on Restaurant option start {@link RestaurantFragment} */
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.content_body, new RestaurantFragment())
                         .commit();
+                getSupportActionBar().setTitle("Restaurant");
                 break;
             case R.id.nav_shopping:
                 /** When user clicks on Shopping option start {@link ShoppingFragment} */
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.content_body, new ShoppingFragment())
                         .commit();
+                getSupportActionBar().setTitle("Shopping");
                 break;
             case R.id.nav_nightlife:
                 /** When user clicks on Music and Nightlife option start {@link MusicAndNightLifeFragment} */
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.content_body, new MusicAndNightLifeFragment())
                         .commit();
+                getSupportActionBar().setTitle("Music and Nightlife");
                 break;
             default:
                 getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.layout_body, new OverviewFragment())
+                        .replace(R.id.content_body, new OverviewFragment())
                         .commit();
                 break;
         }
