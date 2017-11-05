@@ -82,7 +82,7 @@
                     android:fontFamily="sans-serif-medium"
                     android:padding="8dp"
                     android:text="take me"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/whiteText"
                     android:textSize="14sp" />
             </FrameLayout>
         </LinearLayout>

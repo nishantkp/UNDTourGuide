@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:text="Toronto"
         android:fontFamily="sans-serif-condensed"
-        android:textColor="@android:color/white"
+        android:textColor="@color/whiteText"
         android:textSize="42sp"
         android:textStyle="bold" />
 </LinearLayout>
