@@ -14,27 +14,21 @@
         <ImageView
             android:id="@+id/list_item_attraction_image"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="@dimen/image_height"
             android:scaleType="centerCrop"
             android:src="@drawable/union_station" />
 
         <TextView
             android:id="@+id/list_item_attraction_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-light"
-            android:padding="16dp"
-            android:textColor="@color/primaryTextColor"
-            android:textSize="24sp"
-            android:textStyle="bold"
+            style="@style/detail_activity_place_title_style"
             tools:text="Union Station" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginBottom="@dimen/activity_margin"
+            android:layout_marginLeft="@dimen/activity_margin"
+            android:layout_marginRight="@dimen/activity_margin"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -55,15 +49,15 @@
                         style="?android:attr/ratingBarStyleSmall"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:numStars="5"
-                        android:rating="4.5" />
+                        tools:numStars="5"
+                        tools:rating="4.5" />
 
                     <TextView
                         android:id="@+id/rating_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
-                        android:text="4.5"
+                        tools:text="4.5"
                         android:textColor="@color/secondaryTextColor" />
                 </LinearLayout>
             </FrameLayout>
@@ -75,39 +69,20 @@
 
                 <TextView
                     android:id="@+id/take_me_to_location"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:background="@drawable/textview_background"
-                    android:fontFamily="sans-serif-medium"
-                    android:padding="8dp"
-                    android:text="take me"
-                    android:textColor="@color/whiteText"
-                    android:textSize="14sp" />
+                    style="@style/detail_activity_take_me_button_style"
+                    android:text="@string/take_me_text" />
             </FrameLayout>
         </LinearLayout>
 
         <TextView
             android:id="@+id/list_item_attraction_description"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-light"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:textColor="@color/primaryTextColor"
-            android:textSize="16sp"
+            style="@style/detail_activity_summary_style"
             tools:text="@string/union_station" />
 
         <TextView
             android:id="@+id/address_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-light"
-            android:padding="16dp"
-            android:text="Address"
-            android:textColor="@color/primaryTextColor"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            style="@style/detail_activity_category_title_style"
+            android:text="@string/address_title" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -115,24 +90,18 @@
             android:layout_gravity="center"
             android:drawSelectorOnTop="true"
             android:orientation="horizontal"
-            android:paddingBottom="16dp">
+            android:paddingBottom="@dimen/activity_padding">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
+                android:layout_marginLeft="@dimen/activity_margin"
                 android:src="@drawable/ic_location_on_black_24dp"
                 android:tint="@color/primaryTextColor" />
 
             <TextView
                 android:id="@+id/list_item_attraction_address_to_google_maps"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="sans-serif-light"
-                android:gravity="center_vertical"
-                android:paddingLeft="16dp"
-                android:textColor="@color/primaryTextColor"
-                android:textSize="16sp"
+                style="@style/detail_activity_category_text_style"
                 tools:text="Toronto, ON M5J 1E6" />
         </LinearLayout>
     </LinearLayout>
