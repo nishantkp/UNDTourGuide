@@ -57,14 +57,6 @@ public class ArchitectureFragment extends Fragment {
 
         AttractionAdapter adapter = new AttractionAdapter(getActivity(), architecturePlaces);
         ListView listView = rootView.findViewById(R.id.attraction_list);
-
-        // Attach a header to ListView
-        /*
-        View header = View.inflate(getContext(), R.layout.list_view_header, null);
-        TextView headerText = header.findViewById(R.id.list_header);
-        headerText.setText("Architecture");
-        listView.addHeaderView(header);*/
-
         listView.setAdapter(adapter);
 
         // Start new activity to show detail about attraction which is clicked in ListView

@@ -53,14 +53,6 @@ public class ShoppingFragment extends Fragment {
 
         AttractionAdapter adapter = new AttractionAdapter(getActivity(), shoppingPlaces);
         ListView listView = rootView.findViewById(R.id.attraction_list);
-
-        // Find the View with ID list_view_header, change the text and attach to ListView
-        /*
-        View header = View.inflate(getContext(), R.layout.list_view_header, null);
-        TextView headerText = header.findViewById(R.id.list_header);
-        headerText.setText("Shopping");
-        listView.addHeaderView(header);*/
-
         listView.setAdapter(adapter);
 
         // Start new activity to show detail about attraction which is clicked in ListView
