@@ -1,6 +1,7 @@
 package com.example.android.undtourguide;
 
 import android.content.Context;
+import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,12 +18,13 @@ import java.util.ArrayList;
 
 public class AttractionAdapter extends ArrayAdapter<Attraction> {
 
-    public AttractionAdapter(Context context, ArrayList<Attraction> attraction) {
+    AttractionAdapter(Context context, ArrayList<Attraction> attraction) {
         super(context, 0, attraction);
     }
 
+    @NonNull
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(int position, View convertView, @NonNull ViewGroup parent) {
 
         // Check if the existing view is being reused, otherwise inflate the view
         View listItemView = convertView;
