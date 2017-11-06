@@ -105,26 +105,5 @@
                 android:autoLink="map"
                 tools:text="Toronto, ON M5J 1E6" />
         </LinearLayout>
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorAccent">
-
-            <TextView
-                android:id="@+id/phone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:autoLink="phone"
-                android:background="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:drawableLeft="@drawable/ic_phone_white_24dp"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center"
-                android:padding="@dimen/activity_padding"
-                android:textColor="@color/whiteText"
-                android:textSize="16sp"
-                tools:text="(123)456-4568" />
-        </FrameLayout>
     </LinearLayout>
 </ScrollView>
