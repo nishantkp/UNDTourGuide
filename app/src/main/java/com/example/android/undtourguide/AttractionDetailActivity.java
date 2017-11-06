@@ -24,6 +24,31 @@ public class AttractionDetailActivity extends AppCompatActivity {
         // Get the intent
         bundle = getIntent().getExtras();
 
+        /**
+         * Set the title of {@link AttractionDetailActivity} according to fragment identifier
+         * i.e,
+         * 1    ->  Architecture
+         * 2    ->  Music and Nightlife
+         * 3    ->  Restaurant
+         * 4    ->  Shopping
+         */
+        assert bundle != null;
+        int identifier = bundle.getInt(Keys.FRAGMENT_IDENTIFIER);
+        switch (identifier){
+            case 1 :
+                setTitle(getString(R.string.architecture_category));
+                break;
+            case 2:
+                setTitle(getString(R.string.music_and_nightlife_category));
+                break;
+            case 3:
+                setTitle(getString(R.string.restaurant_category));
+                break;
+            case 4:
+                setTitle(R.string.shopping_category);
+                break;
+        }
+
         // Find the ImageView for the image of attraction by id of list_item_attraction_image
         ImageView attractionImage = findViewById(R.id.list_item_attraction_image);
         // Get the attraction resource id of image form Bundle and set the image
