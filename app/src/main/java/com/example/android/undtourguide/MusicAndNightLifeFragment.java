@@ -92,8 +92,8 @@ public class MusicAndNightLifeFragment extends Fragment {
                  * 2    ->  MusicAndNightlifeFragment
                  * 3    ->  RestaurantFragment
                  * 4    ->  ShoppingFragment
-                 * That means intent send from specific fragment and it helps in providing behaviour
-                 * for up action button in {@link AttractionDetailActivity}
+                 * That means intent send from specific fragment and it helps in providing title
+                 * for {@link AttractionDetailActivity}
                  */
                 intent.putExtras(bundle);
 
