@@ -1,6 +1,7 @@
 package com.example.android.undtourguide;
 
 /**
+ * Custom class for store and get details about attraction
  * Created by Nishant on 11/4/2017.
  */
 

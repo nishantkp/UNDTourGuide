@@ -19,6 +19,6 @@ public class Keys {
     public static final String FRAGMENT_IDENTIFIER = "fragment_identifier";
 
     private Keys() {
-        // Empty constructor
+        // Empty constructor so no one can accidentally use it
     }
 }

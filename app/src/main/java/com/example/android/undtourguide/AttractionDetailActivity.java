@@ -13,6 +13,9 @@ public class AttractionDetailActivity extends AppCompatActivity {
 
     /**
      * Bundle to receive through Intent from different fragments
+     * i.e,
+     * {@link ArchitectureFragment} {@link MusicAndNightLifeFragment}
+     * {@link RestaurantFragment} {@link ShoppingFragment}
      */
     private Bundle bundle;
 
@@ -21,16 +24,16 @@ public class AttractionDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_attraction_detail);
 
-        // Get the intent
+        // Get the bundle sent from different fragments
         bundle = getIntent().getExtras();
 
         /**
          * Set the title of {@link AttractionDetailActivity} according to fragment identifier
          * i.e,
-         * 1    ->  Architecture
-         * 2    ->  Music and Nightlife
-         * 3    ->  Restaurant
-         * 4    ->  Shopping
+         * 1    ->  Architecture : meaning intent received from {@link ArchitectureFragment}
+         * 2    ->  Music and Nightlife : meaning intent received from {@link MusicAndNightLifeFragment}
+         * 3    ->  Restaurant : meaning intent received from {@link RestaurantFragment}
+         * 4    ->  Shopping : meaning intent received from {@link ShoppingFragment}
          */
         assert bundle != null;
         int identifier = bundle.getInt(Keys.FRAGMENT_IDENTIFIER);
