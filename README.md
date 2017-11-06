@@ -2,14 +2,22 @@
 
 Project as a part of nano-degree at [Udacity](https://www.udacity.com).
 
+### Project Overview
+
+The goal is to create a Tour Guide App which presents relevant information to a user who’s visiting your city. The app can list top attractions, restaurants, public places, or events for the city. It can contain all the best known secrets that only locals know. It’s up to you which categories you want to provide, as well as what information to provide in each category.
+
+#### Helpers :smiley:
+
 - Navigation Drawer
 - Fragments
 - Maps Intent
+- Custom classes to store information
+- Custom adapter to display list
 
 ### UX Design
 
 <img src="https://user-images.githubusercontent.com/32653955/32425078-90dd4194-c27e-11e7-982f-6027b08af5d7.png" width="275" height="475"> <img src="https://user-images.githubusercontent.com/32653955/32425077-90d15b0e-c27e-11e7-84e2-9f5a82852737.png" width="275" height="475"> 
-<img src="https://user-images.githubusercontent.com/32653955/32425076-90c38862-c27e-11e7-9cd6-941b442e678f.png" width="275" height="475"> <img src="https://user-images.githubusercontent.com/32653955/32425075-90b6e102-c27e-11e7-9691-6433f1d4d9bc.png" width="275" height="475"> 
+<img src="https://user-images.githubusercontent.com/32653955/32425923-c12fa552-c284-11e7-9b92-7de5e910378f.png" width="275" height="475"> <img src="https://user-images.githubusercontent.com/32653955/32425075-90b6e102-c27e-11e7-9691-6433f1d4d9bc.png" width="275" height="475"> 
 
 ## PROJECT LICENSE
 
