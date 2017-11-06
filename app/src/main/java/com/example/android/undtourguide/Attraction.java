@@ -13,47 +13,6 @@ public class Attraction {
     private double mAttractionRating;
 
     /**
-     * @param attractionName    name of the place
-     * @param attractionAddress address of the place
-     *                          // @param attractionDescription general description of place
-     */
-    public Attraction(String attractionName, String attractionAddress) {
-        mAttractionName = attractionName;
-        mAttractionAddress = attractionAddress;
-        //mAttractionDescription = attractionDescription;
-    }
-
-    /**
-     * @param attractionName        name of the place
-     * @param attractionAddress     address of the place
-     * @param attractionDescription general description of the place
-     * @param imageResourceId       image resource if od the place
-     */
-    public Attraction(String attractionName, String attractionAddress, String attractionDescription,
-                      int imageResourceId) {
-        mAttractionName = attractionName;
-        mAttractionAddress = attractionAddress;
-        mAttractionDescription = attractionDescription;
-        mImageResourceId = imageResourceId;
-    }
-
-    /**
-     * @param attractionName        name of the place
-     * @param attractionAddress     address of the place
-     * @param attractionDescription general description of the place
-     * @param imageResourceId       image resource if od the place
-     * @param locationId            location detail in form of lattitute and longitude
-     */
-    public Attraction(String attractionName, String attractionAddress, String attractionDescription,
-                      int imageResourceId, String locationId) {
-        mAttractionName = attractionName;
-        mAttractionAddress = attractionAddress;
-        mAttractionDescription = attractionDescription;
-        mImageResourceId = imageResourceId;
-        mLocationId = locationId;
-    }
-
-    /**
      * Constructor for details about attraction
      *
      * @param attractionName        name of the place
