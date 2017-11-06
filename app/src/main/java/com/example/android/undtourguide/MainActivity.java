@@ -1,6 +1,7 @@
 package com.example.android.undtourguide;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -16,7 +17,7 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setTitle("T.O.");
+        setTitle(getString(R.string.know_toronto));
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -45,7 +46,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
@@ -55,35 +56,35 @@ public class MainActivity extends AppCompatActivity
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.content_body, new OverviewFragment())
                         .commit();
-                getSupportActionBar().setTitle("T.O.");
+                getSupportActionBar().setTitle(getString(R.string.know_toronto));
                 break;
             case R.id.nav_architecture:
                 /** When user clicks on Architecture option start {@link ArchitectureFragment} */
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.content_body, new ArchitectureFragment())
                         .commit();
-                getSupportActionBar().setTitle("Architecture");
+                getSupportActionBar().setTitle(getString(R.string.architecture_category));
                 break;
             case R.id.nav_restaurant:
                 /** When user clicks on Restaurant option start {@link RestaurantFragment} */
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.content_body, new RestaurantFragment())
                         .commit();
-                getSupportActionBar().setTitle("Restaurant");
+                getSupportActionBar().setTitle(getString(R.string.restaurant_category));
                 break;
             case R.id.nav_shopping:
                 /** When user clicks on Shopping option start {@link ShoppingFragment} */
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.content_body, new ShoppingFragment())
                         .commit();
-                getSupportActionBar().setTitle("Shopping");
+                getSupportActionBar().setTitle(getString(R.string.shopping_category));
                 break;
             case R.id.nav_nightlife:
                 /** When user clicks on Music and Nightlife option start {@link MusicAndNightLifeFragment} */
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.content_body, new MusicAndNightLifeFragment())
                         .commit();
-                getSupportActionBar().setTitle("Music and Nightlife");
+                getSupportActionBar().setTitle(getString(R.string.music_and_nightlife_category));
                 break;
             default:
                 getSupportFragmentManager().beginTransaction()

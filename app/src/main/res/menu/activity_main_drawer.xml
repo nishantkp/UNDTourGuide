@@ -6,19 +6,18 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_to"
-            android:title="T.O." />
+            android:title="@string/know_toronto" />
         <item
             android:id="@+id/nav_architecture"
-            android:title="Architecture" />
+            android:title="@string/architecture_category" />
         <item
             android:id="@+id/nav_restaurant"
-            android:title="Restaurant" />
+            android:title="@string/restaurant_category" />
         <item
             android:id="@+id/nav_shopping"
-            android:title="Shopping"/>
+            android:title="@string/shopping_category" />
         <item
             android:id="@+id/nav_nightlife"
-            android:title="Music and Nightlife" />
+            android:title="@string/music_and_nightlife_category" />
     </group>
-
 </menu>

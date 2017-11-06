@@ -5,11 +5,11 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="overview_category">Toronto</string>
-    <string name="know_toronto">Know Toronto</string>
+    <string name="know_toronto">T.O.</string>
     <string name="architecture_category">Architecture</string>
     <string name="restaurant_category">Restaurants</string>
     <string name="shopping_category">Shopping</string>
-    <string name="music_and_nightlife_category">Nightlife</string>
+    <string name="music_and_nightlife_category">Music and Nightlife</string>
 
     <string name="toronto_eton_center">Start your day off at one of the city’s most iconic
         shopping hubs – Toronto Eaton Centre. Conveniently located downtown on Yonge Street between
