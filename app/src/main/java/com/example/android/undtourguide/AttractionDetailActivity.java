@@ -61,7 +61,7 @@ public class AttractionDetailActivity extends AppCompatActivity {
             phoneNumberInContactSection.setVisibility(View.VISIBLE);
 
             // Display phone number in Contact section
-            showPhoneNumber();
+            showPhoneNumberAndMakeCall();
         } else {
             // If bundle doesn't contain phone number, hide the phone icon
             // and phone number from thr contact section
@@ -134,11 +134,25 @@ public class AttractionDetailActivity extends AppCompatActivity {
 
     /**
      * This function is called to display phone number in
-     * Contact section of activity_attraction_detail.xml
+     * Contact section of activity_attraction_detail. and attach a click listener to phone icon
+     * So when user clicks on phone icon, they can make a call
      */
-    private void showPhoneNumber() {
+    private void showPhoneNumberAndMakeCall() {
         // Find the TextView with Id list_item_attraction_phone_number and set the phone number
         TextView phoneNumber = findViewById(R.id.detail_activity_attraction_phone_number);
         phoneNumber.setText(bundle.getString(Keys.ATTRACTION_PHONE_NUMBER_KEY));
+
+        // Find the ImageView with id detail_activity_phone_icon and attach a listener to it
+        // When user clicks on Image, start a new Intent to make a phone call
+        ImageView callIcon = findViewById(R.id.detail_activity_phone_icon);
+        callIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String phoneNumber = bundle.getString(Keys.ATTRACTION_PHONE_NUMBER_KEY);
+                Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                callIntent.setData(Uri.parse("tel:" + phoneNumber));
+                startActivity(callIntent);
+            }
+        });
     }
 }
