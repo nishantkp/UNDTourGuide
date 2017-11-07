@@ -12,6 +12,7 @@ public class Attraction {
     private int mImageResourceId;
     private String mLocationId;
     private double mAttractionRating;
+    private String mAttractionPhoneNumber;
 
     /**
      * Constructor for details about attraction
@@ -31,6 +32,33 @@ public class Attraction {
         mImageResourceId = imageResourceId;
         mLocationId = locationId;
         mAttractionRating = attractionRating;
+    }
+
+    /**
+     * Constructor for details about attraction
+     *
+     * @param attractionName        name of the place
+     * @param attractionAddress     address of the place
+     * @param attractionDescription general description of the place
+     * @param imageResourceId       image resource if od the place
+     * @param locationId            location detail in form of latitude and longitude
+     * @param attractionRating      rating for attraction
+     * @param attractionPhoneNumber phone number of place
+     */
+    public Attraction(String attractionName
+            , String attractionAddress
+            , String attractionDescription
+            , int imageResourceId
+            , String locationId
+            , double attractionRating
+            , String attractionPhoneNumber) {
+        mAttractionName = attractionName;
+        mAttractionAddress = attractionAddress;
+        mAttractionDescription = attractionDescription;
+        mImageResourceId = imageResourceId;
+        mLocationId = locationId;
+        mAttractionRating = attractionRating;
+        mAttractionPhoneNumber = attractionPhoneNumber;
     }
 
     /**
@@ -73,5 +101,12 @@ public class Attraction {
      */
     public double getAttractionRating() {
         return mAttractionRating;
+    }
+
+    /**
+     * @return get the phone number of a place
+     */
+    public String getAttractionPhoneNumber() {
+        return mAttractionPhoneNumber;
     }
 }
