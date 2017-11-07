@@ -56,9 +56,14 @@ public class AttractionDetailActivity extends AppCompatActivity {
         // and phone number in contact section
         View phoneIcon = findViewById(R.id.detail_activity_phone_icon_layout);
         View phoneNumberInContactSection = findViewById(R.id.detail_activity_phone_number_layout);
+        // TextView to set the title of category (i.e Address or Contact) depending upon the
+        // detail activity is showing
+        TextView addressTitle = findViewById(R.id.address_text);
         if (bundle.containsKey(Keys.ATTRACTION_PHONE_NUMBER_KEY)) {
             phoneIcon.setVisibility(View.VISIBLE);
             phoneNumberInContactSection.setVisibility(View.VISIBLE);
+            // Activity shows both address and phone number so set category title to "Contact"
+            addressTitle.setText(getString(R.string.contact_title));
 
             // Display phone number in Contact section
             showPhoneNumberAndMakeCall();
@@ -67,6 +72,8 @@ public class AttractionDetailActivity extends AppCompatActivity {
             // and phone number from thr contact section
             phoneIcon.setVisibility(View.GONE);
             phoneNumberInContactSection.setVisibility(View.GONE);
+            // Activity shows only address so set category title to "Address"
+            addressTitle.setText(getString(R.string.address_title));
         }
 
         // Find the ImageView for the image of attraction by id of list_item_attraction_image
