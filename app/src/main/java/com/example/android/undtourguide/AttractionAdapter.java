@@ -51,14 +51,16 @@ public class AttractionAdapter extends ArrayAdapter<Attraction> {
         // Set the attraction name on TextView
         attractionName.setText(currentAttraction.getAttractionName());
 
-        // Find the TextView in list_item.cml by id for displaying attraction address
+        // Find the TextView in list_item.cml by id for displaying attraction address or phone number
         TextView attractionAddress = listItemView.findViewById(R.id.attraction_address);
-        // Get the address from attractionName object
-        // Set the attraction address on TextView
-        if(currentAttraction.hasPhoneNumber()){
+        // If current Attraction object has a phone number then, display phone number and change
+        // the text color to color accent
+        if (currentAttraction.hasPhoneNumber()) {
             attractionAddress.setText(currentAttraction.getAttractionPhoneNumber());
             attractionAddress.setTextColor(ContextCompat.getColor(getContext(), R.color.colorAccent));
         } else {
+            // If current Attraction object has not a phone number then, display address and change
+            // the text color to secondary color
             attractionAddress.setText(currentAttraction.getAttractionAddress());
             attractionAddress.setTextColor(ContextCompat.getColor(getContext(), R.color.secondaryTextColor));
         }
