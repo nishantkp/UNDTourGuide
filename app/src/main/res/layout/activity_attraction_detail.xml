@@ -63,6 +63,21 @@
             </FrameLayout>
 
             <FrameLayout
+                android:id="@+id/phone_icon_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/phone_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_phone_black_24dp"
+                    android:tint="@color/colorAccent" />
+            </FrameLayout>
+
+            <FrameLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1">
@@ -88,7 +103,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:drawSelectorOnTop="true"
             android:orientation="horizontal"
             android:paddingBottom="@dimen/activity_padding">
 
@@ -104,6 +118,28 @@
                 style="@style/detail_activity_category_text_style"
                 android:autoLink="map"
                 tools:text="Toronto, ON M5J 1E6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phone_number_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/activity_padding">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_margin"
+                android:src="@drawable/ic_phone_black_24dp"
+                android:tint="@color/primaryTextColor" />
+
+            <TextView
+                android:id="@+id/list_item_attraction_phone_number"
+                style="@style/detail_activity_category_text_style"
+                android:autoLink="map"
+                tools:text="(123) 234-4575" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
