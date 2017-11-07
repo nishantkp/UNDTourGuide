@@ -13,6 +13,7 @@ public class Attraction {
     private String mLocationId;
     private double mAttractionRating;
     private String mAttractionPhoneNumber;
+    private boolean mHasPhoneNumber = false;
 
     /**
      * Constructor for details about attraction
@@ -111,6 +112,14 @@ public class Attraction {
      * @return get the phone number of a place
      */
     public String getAttractionPhoneNumber() {
+        mHasPhoneNumber = true;
         return mAttractionPhoneNumber;
+    }
+
+    /**
+     * @return true if phone number is present, else return false
+     */
+    public boolean hasPhoneNumber() {
+        return mHasPhoneNumber;
     }
 }
