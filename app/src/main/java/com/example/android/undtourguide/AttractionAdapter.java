@@ -2,6 +2,7 @@ package com.example.android.undtourguide;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,7 +55,13 @@ public class AttractionAdapter extends ArrayAdapter<Attraction> {
         TextView attractionAddress = listItemView.findViewById(R.id.attraction_address);
         // Get the address from attractionName object
         // Set the attraction address on TextView
-        attractionAddress.setText(currentAttraction.getAttractionAddress());
+        if(currentAttraction.hasPhoneNumber()){
+            attractionAddress.setText(currentAttraction.getAttractionPhoneNumber());
+            attractionAddress.setTextColor(ContextCompat.getColor(getContext(), R.color.colorAccent));
+        } else {
+            attractionAddress.setText(currentAttraction.getAttractionAddress());
+            attractionAddress.setTextColor(ContextCompat.getColor(getContext(), R.color.secondaryTextColor));
+        }
 
         return listItemView;
     }

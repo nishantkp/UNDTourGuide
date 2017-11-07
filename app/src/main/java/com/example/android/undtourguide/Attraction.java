@@ -12,8 +12,8 @@ public class Attraction {
     private int mImageResourceId;
     private String mLocationId;
     private double mAttractionRating;
-    private String mAttractionPhoneNumber;
-    private boolean mHasPhoneNumber = false;
+    private static final String NO_PHONE_NUMBER = "0";
+    private String mAttractionPhoneNumber = NO_PHONE_NUMBER;
 
     /**
      * Constructor for details about attraction
@@ -112,7 +112,6 @@ public class Attraction {
      * @return get the phone number of a place
      */
     public String getAttractionPhoneNumber() {
-        mHasPhoneNumber = true;
         return mAttractionPhoneNumber;
     }
 
@@ -120,6 +119,6 @@ public class Attraction {
      * @return true if phone number is present, else return false
      */
     public boolean hasPhoneNumber() {
-        return mHasPhoneNumber;
+        return !(mAttractionPhoneNumber.equals(NO_PHONE_NUMBER));
     }
 }
