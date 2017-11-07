@@ -52,6 +52,23 @@ public class AttractionDetailActivity extends AppCompatActivity {
                 break;
         }
 
+        // If Bundle contains phone number, then show the phone icon to perform call operation
+        // and phone number in contact section
+        View phoneIcon = findViewById(R.id.phone_icon_layout);
+        View phoneNumberInContactSection = findViewById(R.id.phone_number_layout);
+        if(bundle.containsKey(Keys.ATTRACTION_PHONE_NUMBER_KEY)){
+            phoneIcon.setVisibility(View.VISIBLE);
+            phoneNumberInContactSection.setVisibility(View.VISIBLE);
+
+            // Display phone number in Contact section
+            showPhoneNumber();
+        } else {
+            // If bundle doesn't contain phone number, hide the phone icon
+            // and phone number from thr contact section
+            phoneIcon.setVisibility(View.GONE);
+            phoneNumberInContactSection.setVisibility(View.GONE);
+        }
+
         // Find the ImageView for the image of attraction by id of list_item_attraction_image
         ImageView attractionImage = findViewById(R.id.list_item_attraction_image);
         // Get the attraction resource id of image form Bundle and set the image
@@ -113,5 +130,15 @@ public class AttractionDetailActivity extends AppCompatActivity {
         return "geo:" + latitude + "," + longitude
                 + "?q=<" + latitude + ">,<" + longitude + ">,("
                 + bundle.getString(Keys.ATTRACTION_NAME_KEY) + ")";
+    }
+
+    /**
+     * This function is called to display phone number in
+     * Contact section of activity_attraction_detail.xml
+     */
+    private void showPhoneNumber(){
+        // Find the TextView with Id list_item_attraction_phone_number and set the phone number
+        TextView phoneNumber = findViewById(R.id.list_item_attraction_phone_number);
+        phoneNumber.setText(bundle.getString(Keys.ATTRACTION_PHONE_NUMBER_KEY));
     }
 }
