@@ -79,6 +79,7 @@ public class RestaurantFragment extends Fragment {
                 bundle.putString(Keys.ATTRACTION_LOCATION_KEY, attraction.getLocationId());
                 bundle.putString(Keys.ATTRACTION_DETAIL_KEY, attraction.getAttractionDescription());
                 bundle.putDouble(Keys.ATTRACTION_RATING_KEY, attraction.getAttractionRating());
+                bundle.putString(Keys.ATTRACTION_PHONE_NUMBER_KEY, attraction.getAttractionPhoneNumber());
 
                 /**
                  * When identifier is,
