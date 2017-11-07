@@ -13,11 +13,12 @@ The goal is to create a Tour Guide App which presents relevant information to a 
 - Maps Intent
 - Custom classes to store information
 - Custom adapter to display list
+- Call Intent
 
 ### UX Design
 
 <img src="https://user-images.githubusercontent.com/32653955/32425078-90dd4194-c27e-11e7-982f-6027b08af5d7.png" width="275" height="475"> <img src="https://user-images.githubusercontent.com/32653955/32425077-90d15b0e-c27e-11e7-84e2-9f5a82852737.png" width="275" height="475"> 
-<img src="https://user-images.githubusercontent.com/32653955/32425923-c12fa552-c284-11e7-9b92-7de5e910378f.png" width="275" height="475"> <img src="https://user-images.githubusercontent.com/32653955/32425075-90b6e102-c27e-11e7-9691-6433f1d4d9bc.png" width="275" height="475"> 
+<img src="https://user-images.githubusercontent.com/32653955/32425923-c12fa552-c284-11e7-9b92-7de5e910378f.png" width="275" height="475"> <img src="https://user-images.githubusercontent.com/32653955/32425075-90b6e102-c27e-11e7-9691-6433f1d4d9bc.png" width="275" height="475"> <img src="https://user-images.githubusercontent.com/32653955/32476373-f471a49a-c344-11e7-8a1d-fccdc1549402.png" width="275" height="475"> <img src="https://user-images.githubusercontent.com/32653955/32476372-f456c3aa-c344-11e7-837d-30bd454f5104.png" width="275" height="475"> 
 
 ## PROJECT LICENSE
 
