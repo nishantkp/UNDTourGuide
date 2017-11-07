@@ -37,8 +37,8 @@ public class AttractionDetailActivity extends AppCompatActivity {
          */
         assert bundle != null;
         int identifier = bundle.getInt(Keys.FRAGMENT_IDENTIFIER);
-        switch (identifier){
-            case 1 :
+        switch (identifier) {
+            case 1:
                 setTitle(getString(R.string.architecture_category));
                 break;
             case 2:
@@ -54,9 +54,9 @@ public class AttractionDetailActivity extends AppCompatActivity {
 
         // If Bundle contains phone number, then show the phone icon to perform call operation
         // and phone number in contact section
-        View phoneIcon = findViewById(R.id.phone_icon_layout);
-        View phoneNumberInContactSection = findViewById(R.id.phone_number_layout);
-        if(bundle.containsKey(Keys.ATTRACTION_PHONE_NUMBER_KEY)){
+        View phoneIcon = findViewById(R.id.detail_activity_phone_icon_layout);
+        View phoneNumberInContactSection = findViewById(R.id.detail_activity_phone_number_layout);
+        if (bundle.containsKey(Keys.ATTRACTION_PHONE_NUMBER_KEY)) {
             phoneIcon.setVisibility(View.VISIBLE);
             phoneNumberInContactSection.setVisibility(View.VISIBLE);
 
@@ -70,38 +70,38 @@ public class AttractionDetailActivity extends AppCompatActivity {
         }
 
         // Find the ImageView for the image of attraction by id of list_item_attraction_image
-        ImageView attractionImage = findViewById(R.id.list_item_attraction_image);
+        ImageView attractionImage = findViewById(R.id.detail_activity_attraction_image);
         // Get the attraction resource id of image form Bundle and set the image
         attractionImage.setImageResource(bundle.getInt(Keys.ATTRACTION_IMAGE_KEY));
 
         // Find the textView for the description of the attraction by id of list_item_attraction_description
-        TextView attractionDescription = findViewById(R.id.list_item_attraction_description);
+        TextView attractionDescription = findViewById(R.id.detail_activity_attraction_description);
         // Get the attraction description from Bundle and set the text
         attractionDescription.setText(bundle.getString(Keys.ATTRACTION_DETAIL_KEY));
 
         // Find the textView for the Name of the attraction by id of list_item_attraction_name
-        TextView attractionName = findViewById(R.id.list_item_attraction_name);
+        TextView attractionName = findViewById(R.id.detail_activity_attraction_name);
         // Get the attraction name from Bundle and set the text
         attractionName.setText(bundle.getString(Keys.ATTRACTION_NAME_KEY));
 
         // Find the textView for the address of the attraction by id of list_item_attraction_address_to_google_maps
-        TextView attractionAddress = findViewById(R.id.list_item_attraction_address_to_google_maps);
+        TextView attractionAddress = findViewById(R.id.detail_activity_attraction_address);
         // Get the attraction address from Bundle and set the text
         attractionAddress.setText(bundle.getString(Keys.ATTRACTION_ADDRESS_KEY));
 
         // Find the TextView for displaying rating with id of rating_text
-        TextView ratingText = findViewById(R.id.rating_text);
+        TextView ratingText = findViewById(R.id.detail_activity_rating_text);
         // Get the attraction ratting from Bundle and set the text
         ratingText.setText(String.valueOf(bundle.getDouble(Keys.ATTRACTION_RATING_KEY)));
 
         // Find the RatingBar with id of ratting_bar
-        RatingBar ratingBar = findViewById(R.id.ratting_bar);
+        RatingBar ratingBar = findViewById(R.id.detail_activity_ratting_bar);
         // Convert the rating into float from double and set the RatingBar
         ratingBar.setRating((float) bundle.getDouble(Keys.ATTRACTION_RATING_KEY));
 
         // Find the TextView with id of take_me_to_location and attach a listener to it
         // So when user clicks on TextView, it opens up maps through Intent to show location
-        TextView openMaps = findViewById(R.id.take_me_to_location);
+        TextView openMaps = findViewById(R.id.detail_activity_take_me_to_location);
         openMaps.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -136,9 +136,9 @@ public class AttractionDetailActivity extends AppCompatActivity {
      * This function is called to display phone number in
      * Contact section of activity_attraction_detail.xml
      */
-    private void showPhoneNumber(){
+    private void showPhoneNumber() {
         // Find the TextView with Id list_item_attraction_phone_number and set the phone number
-        TextView phoneNumber = findViewById(R.id.list_item_attraction_phone_number);
+        TextView phoneNumber = findViewById(R.id.detail_activity_attraction_phone_number);
         phoneNumber.setText(bundle.getString(Keys.ATTRACTION_PHONE_NUMBER_KEY));
     }
 }

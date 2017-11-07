@@ -24,14 +24,14 @@
             android:padding="@dimen/activity_padding">
 
             <TextView
-                android:id="@+id/attraction_name"
+                android:id="@+id/list_item_attraction_name"
                 style="@style/list_item_text_style"
                 android:fontFamily="sans-serif"
                 android:textColor="@color/primaryTextColor"
                 tools:text="Union Station" />
 
             <TextView
-                android:id="@+id/attraction_address"
+                android:id="@+id/list_item_attraction_detail"
                 style="@style/list_item_text_style"
                 android:fontFamily="sans-serif-light"
                 android:textColor="@color/secondaryTextColor"

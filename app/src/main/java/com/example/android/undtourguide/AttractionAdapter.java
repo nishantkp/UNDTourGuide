@@ -46,13 +46,13 @@ public class AttractionAdapter extends ArrayAdapter<Attraction> {
         attractionImage.setImageResource(currentAttraction.getImageResourceId());
 
         // Find the TextView in list_item.xml by Id for displaying attraction name
-        TextView attractionName = listItemView.findViewById(R.id.attraction_name);
+        TextView attractionName = listItemView.findViewById(R.id.list_item_attraction_name);
         // Get the name from attractionName object
         // Set the attraction name on TextView
         attractionName.setText(currentAttraction.getAttractionName());
 
         // Find the TextView in list_item.cml by id for displaying attraction address or phone number
-        TextView attractionAddress = listItemView.findViewById(R.id.attraction_address);
+        TextView attractionAddress = listItemView.findViewById(R.id.list_item_attraction_detail);
         // If current Attraction object has a phone number then, display phone number and change
         // the text color to color accent
         if (currentAttraction.hasPhoneNumber()) {
