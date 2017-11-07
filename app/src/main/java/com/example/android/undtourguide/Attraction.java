@@ -24,8 +24,12 @@ public class Attraction {
      * @param locationId            location detail in form of latitude and longitude
      * @param attractionRating      rating for attraction
      */
-    public Attraction(String attractionName, String attractionAddress, String attractionDescription,
-                      int imageResourceId, String locationId, double attractionRating) {
+    public Attraction(String attractionName
+            , String attractionAddress
+            , String attractionDescription
+            , int imageResourceId
+            , String locationId
+            , double attractionRating) {
         mAttractionName = attractionName;
         mAttractionAddress = attractionAddress;
         mAttractionDescription = attractionDescription;
