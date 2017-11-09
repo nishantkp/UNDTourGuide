@@ -6,39 +6,15 @@ package com.example.android.undtourguide;
  */
 
 public class Attraction {
+    private static final String NO_PHONE_NUMBER = "0";
     private String mAttractionName;
     private String mAttractionAddress;
     private String mAttractionDescription;
     private int mImageResourceId;
     private String mLocationId;
     private double mAttractionRating;
-    private static final String NO_PHONE_NUMBER = "0";
     private String mAttractionPhoneNumber = NO_PHONE_NUMBER;
     private int mThumbnailResourceId;
-
-    /**
-     * Constructor for details about attraction
-     *
-     * @param attractionName        name of the place
-     * @param attractionAddress     address of the place
-     * @param attractionDescription general description of the place
-     * @param imageResourceId       image resource id of the place
-     * @param locationId            location detail in form of latitude and longitude
-     * @param attractionRating      rating for attraction
-     */
-    public Attraction(String attractionName
-            , String attractionAddress
-            , String attractionDescription
-            , int imageResourceId
-            , String locationId
-            , double attractionRating) {
-        mAttractionName = attractionName;
-        mAttractionAddress = attractionAddress;
-        mAttractionDescription = attractionDescription;
-        mImageResourceId = imageResourceId;
-        mLocationId = locationId;
-        mAttractionRating = attractionRating;
-    }
 
     /**
      * Constructor for details about attraction
@@ -65,33 +41,6 @@ public class Attraction {
         mLocationId = locationId;
         mAttractionRating = attractionRating;
         mThumbnailResourceId = thumbnailResourceID;
-    }
-
-    /**
-     * Constructor for details about attraction
-     *
-     * @param attractionName        name of the place
-     * @param attractionAddress     address of the place
-     * @param attractionDescription general description of the place
-     * @param imageResourceId       image resource id of the place
-     * @param locationId            location detail in form of latitude and longitude
-     * @param attractionRating      rating for attraction
-     * @param attractionPhoneNumber phone number of place
-     */
-    public Attraction(String attractionName
-            , String attractionAddress
-            , String attractionDescription
-            , int imageResourceId
-            , String locationId
-            , double attractionRating
-            , String attractionPhoneNumber) {
-        mAttractionName = attractionName;
-        mAttractionAddress = attractionAddress;
-        mAttractionDescription = attractionDescription;
-        mImageResourceId = imageResourceId;
-        mLocationId = locationId;
-        mAttractionRating = attractionRating;
-        mAttractionPhoneNumber = attractionPhoneNumber;
     }
 
     /**
