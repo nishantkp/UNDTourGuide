@@ -27,33 +27,33 @@ public class ArchitectureFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.attraction_list, container, false);
 
         final ArrayList<Attraction> architecturePlaces = new ArrayList<Attraction>();
-        architecturePlaces.add(new Attraction("CN Tower", "301 Front St W",
+        architecturePlaces.add(new Attraction(getString(R.string.cn_tower_title), getString(R.string.cn_tower_address),
                 getResources().getString(R.string.cn_tower), R.drawable.cn_tower,
-                "43.642482,-79.387074",3.5));
-        architecturePlaces.add(new Attraction("New City Hall", "100 Queen St W",
+                "43.642482,-79.387074", 3.5));
+        architecturePlaces.add(new Attraction(getString(R.string.new_city_hall_title), getString(R.string.new_city_hall_address),
                 getResources().getString(R.string.new_city_hall), R.drawable.new_city_hall,
-                "43.653311,-79.383988",4.2));
-        architecturePlaces.add(new Attraction("Old City Hall", "60 Queen St W",
+                "43.653311,-79.383988", 4.2));
+        architecturePlaces.add(new Attraction(getString(R.string.old_city_hall_title), getString(R.string.old_city_hall_address),
                 getResources().getString(R.string.old_city_hall), R.drawable.old_city_hall,
-                "43.652453, -79.381980",4.5));
-        architecturePlaces.add(new Attraction("Art Gallery of Ontario", "317 Dundas St W",
+                "43.652453, -79.381980", 4.5));
+        architecturePlaces.add(new Attraction(getString(R.string.art_gallery_title), getString(R.string.art_gallery_address),
                 getResources().getString(R.string.art_gallary_of_ontario), R.drawable.art_galary_of_ontario,
-                "43.653759, -79.392656",4.1));
-        architecturePlaces.add(new Attraction("Royal Ontario Museum", "100 Queens Park",
+                "43.653759, -79.392656", 4.1));
+        architecturePlaces.add(new Attraction(getString(R.string.royal_ontario_museum_title), getString(R.string.royal_ontario_museum_address),
                 getResources().getString(R.string.royal_ontario_museum), R.drawable.royal_ontario_museum,
-                "43.667656, -79.394521",3.5));
-        architecturePlaces.add(new Attraction("Commerce Court North", "199 Bay St, Ground Floor",
+                "43.667656, -79.394521", 3.5));
+        architecturePlaces.add(new Attraction(getString(R.string.commerce_court_north_title), getString(R.string.commerce_court_north_address),
                 getResources().getString(R.string.commerce_court_north), R.drawable.commerce_court_north,
-                "43.648623, -79.379242",3.5));
-        architecturePlaces.add(new Attraction("Roy Thompson Hall", "60 Simcoe St",
+                "43.648623, -79.379242", 3.5));
+        architecturePlaces.add(new Attraction(getString(R.string.roy_thompson_hall_title), getString(R.string.roy_thompson_hall_address),
                 getResources().getString(R.string.royal_ontario_museum), R.drawable.roy_thompson_hall,
-                "43.646491, -79.386469",4.5));
-        architecturePlaces.add(new Attraction("Union Station", "Toronto, ON M5J 1E6",
+                "43.646491, -79.386469", 4.5));
+        architecturePlaces.add(new Attraction(getString(R.string.union_station_title), getString(R.string.union_station_address),
                 getResources().getString(R.string.union_station), R.drawable.union_station,
-                "43.645076, -79.380849",3.6));
-        architecturePlaces.add(new Attraction("The Royal York", "100 Front St W",
+                "43.645076, -79.380849", 3.6));
+        architecturePlaces.add(new Attraction(getString(R.string.royal_york_title), getString(R.string.royal_york_address),
                 getResources().getString(R.string.the_royal_york), R.drawable.the_royal_york,
-                "43.645803, -79.381302",3.9));
+                "43.645803, -79.381302", 3.9));
 
         AttractionAdapter adapter = new AttractionAdapter(getActivity(), architecturePlaces);
         ListView listView = rootView.findViewById(R.id.attraction_list);
