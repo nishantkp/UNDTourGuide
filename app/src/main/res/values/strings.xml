@@ -309,4 +309,24 @@
     <string name="union_station_address">Union Station</string>
     <string name="royal_york_title">The Royal York</string>
     <string name="royal_york_address">100 Front St W</string>
+
+    <!-- Night clubs name and addresses -->
+    <string name="lost_and_found_title">Lost and Found</string>
+    <string name="lost_and_found_Address">577 King Street West</string>
+    <string name="cube_title">Cube</string>
+    <string name="cube_address">314 Queen Street West</string>
+    <string name="nest_title">Nest</string>
+    <string name="nest_address">423 College Street</string>
+    <string name="coda_title">Coda</string>
+    <string name="coda_address">794 Bathurst Street</string>
+    <string name="union_title">Union</string>
+    <string name="union_address">473 Adelaide Street West</string>
+    <string name="maison_mercer_title">Maison Mercer</string>
+    <string name="maison_mercer_address">15 Mercer Street</string>
+    <string name="efs_toronto_title">EFS Toronto</string>
+    <string name="efs_toronto_address">647 King Street West</string>
+    <string name="the_rex_title">The Rex</string>
+    <string name="the_rex_address">149 Queen Street West</string>
+    <string name="the_reservoir_lounge_title">The Reservoir Lounge</string>
+    <string name="the_reservoir_lounge_address">52 Wellington Street</string>
 </resources>
