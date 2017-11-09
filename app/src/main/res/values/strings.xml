@@ -351,4 +351,22 @@
     <string name="pan_address">516 Danforth Avenue</string>
     <string name="libson_title">Libson by Night</string>
     <string name="libson_address">802 Dundas Street West</string>
+
+    <!-- Shopping malls names and addresses -->
+    <string name="eaton_center_title">Toronto Eaton Center</string>
+    <string name="eaton_center_address">220 Yonge St</string>
+    <string name="yorkville_vilage_title">Yorkville Village</string>
+    <string name="yorkville_village_address">55 Avenue Rd</string>
+    <string name="yorkdale_shopping_title">Yorkdale Shopping Center</string>
+    <string name="yorkdale_shopping_address">3401 Dufferin Street, North York</string>
+    <string name="vaughn_mills_title">Vaughn Mills</string>
+    <string name="vaughn_mills_address">1 Bass Pro Mills Dr, Concord</string>
+    <string name="square_one_title">Square One</string>
+    <string name="square_one_address">100 City Centre Dr, Mississauga</string>
+    <string name="sherway_garderns_title">Sherway Gardens</string>
+    <string name="sherway_gardens_address">25 The West Mall, Etobicoke</string>
+    <string name="dixie_mall_title">Dixie Outlet Malls</string>
+    <string name="dixie_mall_address">1250 S Service Rd, Mississauga</string>
+    <string name="toronto_outlets_title">Toronto Premium Outlets</string>
+    <string name="toronto_outlets_address">13850 Steeles Avenue W, Halton Hills</string>
 </resources>
