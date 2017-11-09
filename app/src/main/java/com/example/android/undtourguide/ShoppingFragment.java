@@ -26,30 +26,62 @@ public class ShoppingFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.attraction_list, container, false);
 
         final ArrayList<Attraction> shoppingPlaces = new ArrayList<>();
-        shoppingPlaces.add(new Attraction(getString(R.string.eaton_center_title), getString(R.string.eaton_center_address),
-                getResources().getString(R.string.toronto_eton_center), R.drawable.toronto_eaton_center,
-                "43.654269, -79.380631", 4.5, R.drawable.th_toronto_eaton_center));
-        shoppingPlaces.add(new Attraction(getString(R.string.yorkville_vilage_title), getString(R.string.yorkville_village_address),
-                getResources().getString(R.string.yorkville_village), R.drawable.yorkville_villege,
-                "43.671573, -79.394954", 4.1, R.drawable.th_yorkville_villege));
-        shoppingPlaces.add(new Attraction(getString(R.string.yorkdale_shopping_title), getString(R.string.yorkdale_shopping_address),
-                getResources().getString(R.string.yorkdale_shopping_center), R.drawable.yorkdale_shopping_center,
-                "43.725146, -79.451793", 4.2, R.drawable.th_yorkdale_shopping_center));
-        shoppingPlaces.add(new Attraction(getString(R.string.vaughn_mills_title), getString(R.string.vaughn_mills_address),
-                getResources().getString(R.string.vaughn_mills), R.drawable.vaughn_mills,
-                "43.825132, -79.538091", 4.2, R.drawable.th_vaughn_mills));
-        shoppingPlaces.add(new Attraction(getString(R.string.square_one_title), getString(R.string.square_one_address),
-                getResources().getString(R.string.square_one), R.drawable.square_one,
-                "43.593287, -79.645891", 4.5, R.drawable.th_square_one));
-        shoppingPlaces.add(new Attraction(getString(R.string.sherway_garderns_title), getString(R.string.sherway_gardens_address),
-                getResources().getString(R.string.sherway_garden), R.drawable.sherway_gardens,
-                "43.610677, -79.557921", 4.8, R.drawable.th_sherway_gardens));
-        shoppingPlaces.add(new Attraction(getString(R.string.dixie_mall_title), getString(R.string.dixie_mall_address),
-                getResources().getString(R.string.dixie_outlet_malls), R.drawable.dixie_outlet_mall,
-                "43.592933, -79.568024", 3.8, R.drawable.th_dixie_outlet_mall));
-        shoppingPlaces.add(new Attraction(getString(R.string.toronto_outlets_title), getString(R.string.toronto_outlets_address),
-                getResources().getString(R.string.toronto_premium_outlet), R.drawable.toronto_premium_outlet,
-                "43.574863, -79.829412", 4.1, R.drawable.th_toronto_premium_outlet));
+        shoppingPlaces.add(new Attraction(getString(R.string.eaton_center_title)
+                , getString(R.string.eaton_center_address)
+                , getResources().getString(R.string.toronto_eton_center)
+                , R.drawable.toronto_eaton_center
+                , "43.654269, -79.380631"
+                , 4.5
+                , R.drawable.th_toronto_eaton_center));
+        shoppingPlaces.add(new Attraction(getString(R.string.yorkville_vilage_title)
+                , getString(R.string.yorkville_village_address)
+                , getResources().getString(R.string.yorkville_village)
+                , R.drawable.yorkville_villege
+                , "43.671573, -79.394954"
+                , 4.1
+                , R.drawable.th_yorkville_villege));
+        shoppingPlaces.add(new Attraction(getString(R.string.yorkdale_shopping_title)
+                , getString(R.string.yorkdale_shopping_address)
+                , getResources().getString(R.string.yorkdale_shopping_center)
+                , R.drawable.yorkdale_shopping_center
+                , "43.725146, -79.451793"
+                , 4.2
+                , R.drawable.th_yorkdale_shopping_center));
+        shoppingPlaces.add(new Attraction(getString(R.string.vaughn_mills_title)
+                , getString(R.string.vaughn_mills_address)
+                , getResources().getString(R.string.vaughn_mills)
+                , R.drawable.vaughn_mills
+                , "43.825132, -79.538091"
+                , 4.2
+                , R.drawable.th_vaughn_mills));
+        shoppingPlaces.add(new Attraction(getString(R.string.square_one_title)
+                , getString(R.string.square_one_address)
+                , getResources().getString(R.string.square_one)
+                , R.drawable.square_one
+                , "43.593287, -79.645891"
+                , 4.5
+                , R.drawable.th_square_one));
+        shoppingPlaces.add(new Attraction(getString(R.string.sherway_garderns_title)
+                , getString(R.string.sherway_gardens_address)
+                , getResources().getString(R.string.sherway_garden)
+                , R.drawable.sherway_gardens
+                , "43.610677, -79.557921"
+                , 4.8
+                , R.drawable.th_sherway_gardens));
+        shoppingPlaces.add(new Attraction(getString(R.string.dixie_mall_title)
+                , getString(R.string.dixie_mall_address)
+                , getResources().getString(R.string.dixie_outlet_malls)
+                , R.drawable.dixie_outlet_mall
+                , "43.592933, -79.568024"
+                , 3.8
+                , R.drawable.th_dixie_outlet_mall));
+        shoppingPlaces.add(new Attraction(getString(R.string.toronto_outlets_title)
+                , getString(R.string.toronto_outlets_address)
+                , getResources().getString(R.string.toronto_premium_outlet)
+                , R.drawable.toronto_premium_outlet
+                , "43.574863, -79.829412"
+                , 4.1
+                , R.drawable.th_toronto_premium_outlet));
 
         AttractionAdapter adapter = new AttractionAdapter(getActivity(), shoppingPlaces);
         ListView listView = rootView.findViewById(R.id.attraction_list);
