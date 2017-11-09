@@ -1,8 +1,6 @@
 package com.example.android.undtourguide;
 
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.support.annotation.NonNull;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
@@ -41,12 +39,10 @@ public class AttractionAdapter extends ArrayAdapter<Attraction> {
         // Get the Attraction object located at this position in the list
         Attraction currentAttraction = getItem(position);
 
-        // Find the ImageView in list_item.xml by Id for displaying attraction image
+        // Find the ImageView in list_item.xml by Id for displaying attraction thumbnail
         ImageView attractionImage = listItemView.findViewById(R.id.list_item_image);
         assert currentAttraction != null;
-        // Convert image drawable into Bitmap in runtime
-        Bitmap image = BitmapFactory.decodeResource(getContext().getResources(), currentAttraction.getImageResourceId());
-        attractionImage.setImageBitmap(Bitmap.createScaledBitmap(image, 150, 150, false));
+        attractionImage.setImageResource(currentAttraction.getThubmnailResourceId());
 
         // Find the TextView in list_item.xml by Id for displaying attraction name
         TextView attractionName = listItemView.findViewById(R.id.list_item_attraction_name);
