@@ -26,36 +26,84 @@ public class RestaurantFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.attraction_list, container, false);
 
         final ArrayList<Attraction> restaurantPlaces = new ArrayList<>();
-        restaurantPlaces.add(new Attraction(getString(R.string.terroni_title), getString(R.string.terroni_address),
-                getResources().getString(R.string.terroni), R.drawable.terroni,
-                "43.646257, -79.409191", 3.9, "(416) 504-1992", R.drawable.th_terroni));
-        restaurantPlaces.add(new Attraction(getString(R.string.smokehouse_title), getString(R.string.smokehouse_address),
-                getResources().getString(R.string.barbqe_smokehouse), R.drawable.barbque_smokehouse,
-                "43.647955, -79.449589", 3.8, "(416) 532-7700", R.drawable.th_barbque_smokehouse));
-        restaurantPlaces.add(new Attraction(getString(R.string.il_fornello_title), getString(R.string.il_fornello_address),
-                getResources().getString(R.string.il_fornello), R.drawable.il_fornello,
-                "43.678641, -79.347077", 4.5, "(416) 466-2931", R.drawable.th_il_fornello));
-        restaurantPlaces.add(new Attraction(getString(R.string.uncle_betty_title), getString(R.string.uncle_betty_address),
-                getResources().getString(R.string.uncle_bettys), R.drawable.uncle_bettys_diner,
-                "43.714368, -79.400314", 4.8, "(416) 483-2590", R.drawable.th_uncle_bettys_diner));
-        restaurantPlaces.add(new Attraction(getString(R.string.the_ace_title), getString(R.string.the_ace_address),
-                getResources().getString(R.string.the_ace), R.drawable.the_ace,
-                "43.646100, -79.448782", 4.0, "(416) 792-7729", R.drawable.th_the_ace));
-        restaurantPlaces.add(new Attraction(getString(R.string.magic_oven_title), getString(R.string.magic_oven_address),
-                getResources().getString(R.string.magic_oven), R.drawable.magic_oven,
-                "43.682893, -79.326474", 4.1, "(416) 462-0333", R.drawable.th_magic_oven));
-        restaurantPlaces.add(new Attraction(getString(R.string.mandarin_title), getString(R.string.mandarin_address),
-                getResources().getString(R.string.mandarin), R.drawable.mandarin,
-                "43.705844, -79.398479", 4.5, "(416) 486-2222", R.drawable.th_mandarin));
-        restaurantPlaces.add(new Attraction(getString(R.string.spaghetti_factory_title), getString(R.string.spaghetti_factory_address),
-                getResources().getString(R.string.the_old_spaghetti_factory), R.drawable.the_old_spaghetti_factory,
-                "43.646956, -79.374389", 3.7, "(416) 864-9761", R.drawable.th_the_old_spaghetti_factory));
-        restaurantPlaces.add(new Attraction(getString(R.string.pan_title), getString(R.string.pan_address),
-                getResources().getString(R.string.pan_on_danforth), R.drawable.pan_on_denforth,
-                "43.678370, -79.348710", 3.9, "(416) 466-8158", R.drawable.th_pan_on_denforth));
-        restaurantPlaces.add(new Attraction(getString(R.string.libson_title), getString(R.string.libson_address),
-                getResources().getString(R.string.lisbon_by_night), R.drawable.libson_by_night,
-                "43.651886, -79.408764", 4.1, "(416) 603-6522", R.drawable.th_libson_by_night));
+        restaurantPlaces.add(new Attraction(getString(R.string.terroni_title)
+                , getString(R.string.terroni_address)
+                , getResources().getString(R.string.terroni)
+                , R.drawable.terroni
+                , "43.646257, -79.409191"
+                , 3.9
+                , "(416) 504-1992"
+                , R.drawable.th_terroni));
+        restaurantPlaces.add(new Attraction(getString(R.string.smokehouse_title)
+                , getString(R.string.smokehouse_address)
+                , getResources().getString(R.string.barbqe_smokehouse)
+                , R.drawable.barbque_smokehouse
+                , "43.647955, -79.449589"
+                , 3.8
+                , "(416) 532-7700"
+                , R.drawable.th_barbque_smokehouse));
+        restaurantPlaces.add(new Attraction(getString(R.string.il_fornello_title)
+                , getString(R.string.il_fornello_address)
+                , getResources().getString(R.string.il_fornello)
+                , R.drawable.il_fornello
+                , "43.678641, -79.347077"
+                , 4.5
+                , "(416) 466-2931"
+                , R.drawable.th_il_fornello));
+        restaurantPlaces.add(new Attraction(getString(R.string.uncle_betty_title)
+                , getString(R.string.uncle_betty_address)
+                , getResources().getString(R.string.uncle_bettys)
+                , R.drawable.uncle_bettys_diner
+                , "43.714368, -79.400314"
+                , 4.8
+                , "(416) 483-2590"
+                , R.drawable.th_uncle_bettys_diner));
+        restaurantPlaces.add(new Attraction(getString(R.string.the_ace_title)
+                , getString(R.string.the_ace_address)
+                , getResources().getString(R.string.the_ace)
+                , R.drawable.the_ace
+                , "43.646100, -79.448782"
+                , 4.0
+                , "(416) 792-7729"
+                , R.drawable.th_the_ace));
+        restaurantPlaces.add(new Attraction(getString(R.string.magic_oven_title)
+                , getString(R.string.magic_oven_address)
+                , getResources().getString(R.string.magic_oven)
+                , R.drawable.magic_oven
+                , "43.682893, -79.326474", 4.1
+                , "(416) 462-0333"
+                , R.drawable.th_magic_oven));
+        restaurantPlaces.add(new Attraction(getString(R.string.mandarin_title)
+                , getString(R.string.mandarin_address)
+                , getResources().getString(R.string.mandarin)
+                , R.drawable.mandarin
+                , "43.705844, -79.398479"
+                , 4.5
+                , "(416) 486-2222"
+                , R.drawable.th_mandarin));
+        restaurantPlaces.add(new Attraction(getString(R.string.spaghetti_factory_title)
+                , getString(R.string.spaghetti_factory_address)
+                , getResources().getString(R.string.the_old_spaghetti_factory)
+                , R.drawable.the_old_spaghetti_factory
+                , "43.646956, -79.374389"
+                , 3.7
+                , "(416) 864-9761"
+                , R.drawable.th_the_old_spaghetti_factory));
+        restaurantPlaces.add(new Attraction(getString(R.string.pan_title)
+                , getString(R.string.pan_address)
+                , getResources().getString(R.string.pan_on_danforth)
+                , R.drawable.pan_on_denforth
+                , "43.678370, -79.348710"
+                , 3.9
+                , "(416) 466-8158"
+                , R.drawable.th_pan_on_denforth));
+        restaurantPlaces.add(new Attraction(getString(R.string.libson_title)
+                , getString(R.string.libson_address)
+                , getResources().getString(R.string.lisbon_by_night)
+                , R.drawable.libson_by_night
+                , "43.651886, -79.408764"
+                , 4.1
+                , "(416) 603-6522", R.drawable.th_libson_by_night));
 
         AttractionAdapter adapter = new AttractionAdapter(getActivity(), restaurantPlaces);
         ListView listView = rootView.findViewById(R.id.attraction_list);
