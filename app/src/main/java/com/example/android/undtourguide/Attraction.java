@@ -14,6 +14,7 @@ public class Attraction {
     private double mAttractionRating;
     private static final String NO_PHONE_NUMBER = "0";
     private String mAttractionPhoneNumber = NO_PHONE_NUMBER;
+    private int mThumbnailResourceId;
 
     /**
      * Constructor for details about attraction
@@ -21,7 +22,7 @@ public class Attraction {
      * @param attractionName        name of the place
      * @param attractionAddress     address of the place
      * @param attractionDescription general description of the place
-     * @param imageResourceId       image resource if od the place
+     * @param imageResourceId       image resource id of the place
      * @param locationId            location detail in form of latitude and longitude
      * @param attractionRating      rating for attraction
      */
@@ -45,7 +46,34 @@ public class Attraction {
      * @param attractionName        name of the place
      * @param attractionAddress     address of the place
      * @param attractionDescription general description of the place
-     * @param imageResourceId       image resource if od the place
+     * @param imageResourceId       image resource id of the place
+     * @param locationId            location detail in form of latitude and longitude
+     * @param attractionRating      rating for attraction
+     * @param thumbnailResourceID   thumbnail resource id of the place
+     */
+    public Attraction(String attractionName
+            , String attractionAddress
+            , String attractionDescription
+            , int imageResourceId
+            , String locationId
+            , double attractionRating
+            , int thumbnailResourceID) {
+        mAttractionName = attractionName;
+        mAttractionAddress = attractionAddress;
+        mAttractionDescription = attractionDescription;
+        mImageResourceId = imageResourceId;
+        mLocationId = locationId;
+        mAttractionRating = attractionRating;
+        mThumbnailResourceId = thumbnailResourceID;
+    }
+
+    /**
+     * Constructor for details about attraction
+     *
+     * @param attractionName        name of the place
+     * @param attractionAddress     address of the place
+     * @param attractionDescription general description of the place
+     * @param imageResourceId       image resource id of the place
      * @param locationId            location detail in form of latitude and longitude
      * @param attractionRating      rating for attraction
      * @param attractionPhoneNumber phone number of place
@@ -64,6 +92,35 @@ public class Attraction {
         mLocationId = locationId;
         mAttractionRating = attractionRating;
         mAttractionPhoneNumber = attractionPhoneNumber;
+    }
+
+    /**
+     * Constructor for details about attraction
+     *
+     * @param attractionName        name of the place
+     * @param attractionAddress     address of the place
+     * @param attractionDescription general description of the place
+     * @param imageResourceId       image resource id of the place
+     * @param locationId            location detail in form of latitude and longitude
+     * @param attractionRating      rating for attraction
+     * @param attractionPhoneNumber phone number of place
+     * @param thumbnailResourceId   thumbnail resource id of the place
+     */
+    public Attraction(String attractionName
+            , String attractionAddress
+            , String attractionDescription
+            , int imageResourceId
+            , String locationId
+            , double attractionRating
+            , String attractionPhoneNumber, int thumbnailResourceId) {
+        mAttractionName = attractionName;
+        mAttractionAddress = attractionAddress;
+        mAttractionDescription = attractionDescription;
+        mImageResourceId = imageResourceId;
+        mLocationId = locationId;
+        mAttractionRating = attractionRating;
+        mAttractionPhoneNumber = attractionPhoneNumber;
+        mThumbnailResourceId = thumbnailResourceId;
     }
 
     /**
@@ -120,5 +177,12 @@ public class Attraction {
      */
     public boolean hasPhoneNumber() {
         return !(mAttractionPhoneNumber.equals(NO_PHONE_NUMBER));
+    }
+
+    /**
+     * @return get the resource id of thumbnail
+     */
+    public int getThubmnailResourceId() {
+        return mThumbnailResourceId;
     }
 }
