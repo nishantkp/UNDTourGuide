@@ -329,4 +329,26 @@
     <string name="the_rex_address">149 Queen Street West</string>
     <string name="the_reservoir_lounge_title">The Reservoir Lounge</string>
     <string name="the_reservoir_lounge_address">52 Wellington Street</string>
+
+    <!-- Restaurant names and addresses -->
+    <string name="terroni_title">Terroni</string>
+    <string name="terroni_address">"720 Queen Street West"</string>
+    <string name="smokehouse_title">Barbque Smokehouse</string>
+    <string name="smokehouse_address">1299 Roncesvalles Avenue</string>
+    <string name="il_fornello_title">Il Fornello</string>
+    <string name="il_fornello_address">576 Danforth Avenue</string>
+    <string name="uncle_betty_title">Uncle Betty\'s Dinner</string>
+    <string name="uncle_betty_address">2590 Yonge Street</string>
+    <string name="the_ace_title">The Ace</string>
+    <string name="the_ace_address">231a Roncesvalles Avenue</string>
+    <string name="magic_oven_title">Magic Oven</string>
+    <string name="magic_oven_address">798 Danforth Avenue</string>
+    <string name="mandarin_title">Mandarin</string>
+    <string name="mandarin_address">2200 Yonge Street</string>
+    <string name="spaghetti_factory_title">The Old Spaghetti Factory</string>
+    <string name="spaghetti_factory_address">54 The Esplanade</string>
+    <string name="pan_title">PAN on The Danforth</string>
+    <string name="pan_address">516 Danforth Avenue</string>
+    <string name="libson_title">Libson by Night</string>
+    <string name="libson_address">802 Dundas Street West</string>
 </resources>

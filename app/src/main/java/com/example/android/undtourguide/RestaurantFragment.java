@@ -26,34 +26,34 @@ public class RestaurantFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.attraction_list, container, false);
 
         final ArrayList<Attraction> restaurantPlaces = new ArrayList<>();
-        restaurantPlaces.add(new Attraction("Terroni", "720 Queen Street West",
+        restaurantPlaces.add(new Attraction(getString(R.string.terroni_title), getString(R.string.terroni_address),
                 getResources().getString(R.string.terroni), R.drawable.terroni,
                 "43.646257, -79.409191", 3.9, "(416) 504-1992"));
-        restaurantPlaces.add(new Attraction("Barbque Smokehouse", "1299 Roncesvalles Avenue",
+        restaurantPlaces.add(new Attraction(getString(R.string.smokehouse_title), getString(R.string.smokehouse_address),
                 getResources().getString(R.string.barbqe_smokehouse), R.drawable.barbque_smokehouse,
                 "43.647955, -79.449589", 3.8, "(416) 532-7700"));
-        restaurantPlaces.add(new Attraction("Il Fornello", "576 Danforth Avenue",
+        restaurantPlaces.add(new Attraction(getString(R.string.il_fornello_title), getString(R.string.il_fornello_address),
                 getResources().getString(R.string.il_fornello), R.drawable.il_fornello,
                 "43.678641, -79.347077", 4.5, "(416) 466-2931"));
-        restaurantPlaces.add(new Attraction("Uncle Betty's Dinner", "2590 Yonge Street",
+        restaurantPlaces.add(new Attraction(getString(R.string.uncle_betty_title), getString(R.string.uncle_betty_address),
                 getResources().getString(R.string.uncle_bettys), R.drawable.uncle_bettys_diner,
                 "43.714368, -79.400314", 4.8, "(416) 483-2590"));
-        restaurantPlaces.add(new Attraction("The Ace", "231a Roncesvalles Avenue",
+        restaurantPlaces.add(new Attraction(getString(R.string.the_ace_title), getString(R.string.the_ace_address),
                 getResources().getString(R.string.the_ace), R.drawable.the_ace,
                 "43.646100, -79.448782", 4.0, "(416) 792-7729"));
-        restaurantPlaces.add(new Attraction("Magic Oven", "798 Danforth Avenue",
+        restaurantPlaces.add(new Attraction(getString(R.string.magic_oven_title), getString(R.string.magic_oven_address),
                 getResources().getString(R.string.magic_oven), R.drawable.magic_oven,
                 "43.682893, -79.326474", 4.1, "(416) 462-0333"));
-        restaurantPlaces.add(new Attraction("Mandarin", "2200 Yonge Street",
+        restaurantPlaces.add(new Attraction(getString(R.string.mandarin_title), getString(R.string.mandarin_address),
                 getResources().getString(R.string.mandarin), R.drawable.mandarin,
                 "43.705844, -79.398479", 4.5, "(416) 486-2222"));
-        restaurantPlaces.add(new Attraction("The Old Spaghetti Factory", "54 The Esplanade",
+        restaurantPlaces.add(new Attraction(getString(R.string.spaghetti_factory_title), getString(R.string.spaghetti_factory_address),
                 getResources().getString(R.string.the_old_spaghetti_factory), R.drawable.the_old_spaghetti_factory,
                 "43.646956, -79.374389", 3.7, "(416) 864-9761"));
-        restaurantPlaces.add(new Attraction("PAN on The Danforth", "516 Danforth Avenue",
+        restaurantPlaces.add(new Attraction(getString(R.string.pan_title), getString(R.string.pan_address),
                 getResources().getString(R.string.pan_on_danforth), R.drawable.pan_on_denforth,
                 "43.678370, -79.348710", 3.9, "(416) 466-8158"));
-        restaurantPlaces.add(new Attraction("Libson by Night", "802 Dundas Street West",
+        restaurantPlaces.add(new Attraction(getString(R.string.libson_title), getString(R.string.libson_address),
                 getResources().getString(R.string.lisbon_by_night), R.drawable.libson_by_night,
                 "43.651886, -79.408764", 4.1, "(416) 603-6522"));
 
